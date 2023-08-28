@@ -54,12 +54,18 @@ jobs:
         done <<< "$PAPERS"
 
     - name: Commit and Push Changes
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
+        mkdir -p ~/.ssh
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git add publications.md
         git commit -m "Update publications"
-        git push origin main  # Replace 'main' with your branch name
+        git push origin main
+
 
     # - name: Build Jekyll Site
     #   run: bundle exec jekyll build
