@@ -53,7 +53,7 @@ jobs:
           YEAR=$(echo "$PUBLICATION_DATE" | cut -d'-' -f1)
           DOI=$(echo "$paper" | jq -r '.identifiers.doi[0]')
           
-          echo "- $AUTHORS, [$TITLE](https://doi.org/$DOI), *$JOURNAL_NAME* **$VOLUME**, $STARTING_PAGE ($YEAR)" >> publications.md
+          echo "- $AUTHORS, [$TITLE](https://doi.org/$DOI), $JOURNAL_NAME **$VOLUME**, $STARTING_PAGE ($YEAR)" >> publications.md
         done <<< "$PAPERS"
     - name: Fetch Misc Data from ResearchMap
       run: |
@@ -119,9 +119,9 @@ jobs:
             
             # Add volume and starting page if available
             if [ "$VOLUME" != "null" ] && [ "$STARTING_PAGE" != "null" ]; then
-              PUBLICATION_ENTRY="$PUBLICATION_ENTRY, $VOLUME, $STARTING_PAGE"
+              PUBLICATION_ENTRY="- [$TITLE_JA]($DOI), $AUTHORS, $JOURNAL_NAME **$VOLUME**, $STARTING_PAGE ($YEAR)"
             fi
-            echo "- $PUBLICATION_ENTRY" >> publications.md
+            echo "$PUBLICATION_ENTRY" >> publications.md
           fi
         done <<< "$MISC_ENTRIES"
 
