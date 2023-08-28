@@ -49,7 +49,7 @@ jobs:
           STARTING_PAGE=$(echo "$paper" | jq -r '.starting_page')
           TITLE=$(echo "$paper" | jq -r '.paper_title.en')
           AUTHORS=$(echo "$paper" | jq -r '.authors.en | map(.name) | join(", ")')
-          PUBLICATION_DATE=$(echo "$entry" | jq -r '.publication_date')
+          PUBLICATION_DATE=$(echo "$paper" | jq -r '.publication_date')
           YEAR=$(echo "$PUBLICATION_DATE" | cut -d'-' -f1)
           echo "$YEAR"
           echo "$PUBLICATION_DATE"
