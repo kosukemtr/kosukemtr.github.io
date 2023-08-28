@@ -3,14 +3,15 @@ name: Update Publications
 on:
   schedule:
     - cron: "0 0 * * *"  # Run daily at midnight
-  push:
-    branches:
-      - main 
+  # push:
+  #   branches:
+  #     - main 
 
 jobs:
   update_publications:
     runs-on: ubuntu-latest
-    
+    environment:
+      name: github-pages  
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
