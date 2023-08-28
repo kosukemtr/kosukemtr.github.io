@@ -53,7 +53,14 @@ jobs:
           echo "- $TITLE, $AUTHORS, **$JOURNAL_NAME** *$VOLUME*, $STARTING_PAGE" >> publications.md
         done <<< "$PAPERS"
 
-    
+    - name: Commit and Push Changes
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add publications.md
+        git commit -m "Update publications"
+        git push origin main  # Replace 'main' with your branch name
+
     # - name: Build Jekyll Site
     #   run: bundle exec jekyll build
     
