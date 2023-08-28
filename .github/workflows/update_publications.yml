@@ -49,9 +49,10 @@ jobs:
           STARTING_PAGE=$(echo "$paper" | jq -r '.starting_page')
           TITLE=$(echo "$paper" | jq -r '.paper_title.en')
           AUTHORS=$(echo "$paper" | jq -r '.authors.en | map(.name) | join(", ")')
+          YEAR=$(echo "$PUBLICATION_DATE" | cut -d'-' -f1)
           DOI=$(echo "$paper" | jq -r '.identifiers.doi[0]')
           
-          echo "- [$TITLE](https://doi.org/$DOI), $AUTHORS, *$JOURNAL_NAME* **$VOLUME**, $STARTING_PAGE" >> publications.md
+          echo "- [$TITLE](https://doi.org/$DOI), $AUTHORS, *$JOURNAL_NAME* **$VOLUME**, $STARTING_PAGE ($YEAR)" >> publications.md
         done <<< "$PAPERS"
     - name: Fetch Misc Data from ResearchMap
       run: |
@@ -64,7 +65,33 @@ jobs:
         MISC_ENTRIES=$(echo "$MISC_API_RESPONSE" | jq -c '.items[]')
 
         # Generate Markdown content for both Japanese and English articles
-        echo "## Publications" > publications.md
+        while read -r entry; do
+          # Extract common values
+          TITLE_EN=$(echo "$entry" | jq -r '.paper_title.en // empty')
+          
+          if [ -n "$TITLE_JA" ]; then
+            AUTHORS=$(echo "$entry" | jq -r '.authors.en | map(.name) | join(", ")')
+            DESCRIPTION=$(echo "$entry" | jq -r '.description.en')
+            PUBLICATION_DATE=$(echo "$entry" | jq -r '.publication_date')
+            YEAR=$(echo "$PUBLICATION_DATE" | cut -d'-' -f1)  # Extract the year from publication_date
+            
+            # Check if arXiv_id exists
+            ARXIV_ID=$(echo "$entry" | jq -r '.identifiers.arxiv_id[0] // empty')
+            if [ -n "$ARXIV_ID" ]; then
+              ARXIV_LINK="arXiv:$ARXIV_ID"
+              ARXIV_URL=$(echo "$entry" | jq -r '.see_also[] | select(.label == "arxiv_url") | .@id')
+              ARXIV_YEAR=$(echo "$ARXIV_ID" | cut -d':' -f2)  # Extract the year from arXiv ID
+              
+              # Generate the content for the publications page
+              echo "- [$TITLE_EN]($ARXIV_URL), $AUTHORS, $ARXIV_LINK ($ARXIV_YEAR)" >> publications.md
+            fi
+          fi
+        done <<< "$MISC_ENTRIES"
+        
+        # Generate Markdown content for both Japanese and English articles
+        echo "" >> publications.md
+        echo "## 解説/総説" >> publications.md
+        echo "" >> publications.md
         while read -r entry; do
           # Check if paper_title.ja is null
           TITLE_JA=$(echo "$entry" | jq -r '.paper_title.ja // empty')
@@ -74,10 +101,13 @@ jobs:
             AUTHORS=$(echo "$entry" | jq -r '.authors.ja | map(.name) | join(", ")')
             JOURNAL_NAME=$(echo "$entry" | jq -r '.publication_name.ja')
             DESCRIPTION=$(echo "$entry" | jq -r '.description.ja')
+            VOLUME=$(echo "$paper" | jq -r '.volume')
+            STARTING_PAGE=$(echo "$paper" | jq -r '.starting_page')
+            YEAR=$(echo "$PUBLICATION_DATE" | cut -d'-' -f1)
             DOI=$(echo "$entry" | jq -r '.identifiers.doi[0]')
             
             # Generate the content for the publications page
-            echo "- $TITLE_JA, $AUTHORS, **$JOURNAL_NAME**, $DESCRIPTION, [DOI]($DOI)" >> publications.md
+            echo "- [$TITLE_JA]($DOI), $AUTHORS, $JOURNAL_NAME, $VOLUME, $STARTING_PAGE, ($YEAR)" >> publications.md
           fi
         done <<< "$MISC_ENTRIES"
 
