@@ -12,7 +12,7 @@ permalink: /members/
 }
 
 .member-portrait img {
-  max-width: 100px;
+  max-width: 120px;
   margin-right: 20px; /* Add spacing between portrait and info */
 }
 
