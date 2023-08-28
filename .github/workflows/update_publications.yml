@@ -68,6 +68,9 @@ jobs:
         MISC_ENTRIES=$(echo "$MISC_API_RESPONSE" | jq -c '.items[]')
 
         # Generate Markdown content for both Japanese and English articles
+        echo "" >> publications.md
+        echo "## arXiv preprints" >> publications.md
+        echo "" >> publications.md
         while read -r entry; do
           # Extract common values
           TITLE_EN=$(echo "$entry" | jq -r '.paper_title.en // empty')
