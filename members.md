@@ -17,7 +17,10 @@ permalink: /members/
 }
 
 .member-info {
-  flex-grow: 1; /* Allow info to expand and take remaining space */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start; /* Align items at the top */
 }
 </style>
 
