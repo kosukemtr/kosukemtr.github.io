@@ -3,6 +3,8 @@ layout: page
 title: Publications
 ---
 
+## Peer-reviewed
+
 - Kosuke Mitarai, Kiichiro Toyoizumi, Wataru Mizukami, [Perturbation theory with quantum signal processing](https://doi.org/10.22331/q-2023-05-12-1000), Quantum **7**, 1000 (2023)
 - Kentaro Heya, Ken M. Nakanishi, Kosuke Mitarai, Zhiguang Yan, Kun Zuo, Yasunari Suzuki, Takanori Sugiyama, Shuhei Tamate, Yutaka Tabuchi, Keisuke Fujii, Yasunobu Nakamura, [Subspace variational quantum simulator](https://doi.org/10.1103/physrevresearch.5.023078), Physical Review Research **5**, 023078 (2023)
 - Kenji Kubo, Koichi Miyamoto, Kosuke Mitarai, Keisuke Fujii, [Pricing Multi-asset Derivatives by Variational Quantum Algorithms](https://doi.org/10.1109/tqe.2023.3269525), IEEE Transactions on Quantum Engineering **4**, 1 (2023)
@@ -61,6 +63,6 @@ http://arxiv.org/pdf/1806.10910v1), arXiv:1806.10910 (2018)
 - [テンソルネットワークと機械学習](null), 御手洗光祐, 数理科学 **60**, 51 (2022)
 - [変分量子アルゴリズムと量子機械学習](null), 御手洗光祐, 電子情報通信学会誌 **104**, 1166 (2021)
 - [量子計算は機械学習に使えるか -近未来/誤り体制量子計算のための量子アルゴリズム-](null), 御手洗光祐, 情報処理 **62**, e35 (2021)
-- [化学計算・機械学習 量子コンピューターの2つの挑戦](null), 御手洗光祐, 日経サイエンス 2020年2月号, (2020)
+- [化学計算・機械学習 量子コンピューターの2つの挑戦](null), 御手洗光祐, 日経サイエンス 2020年2月号 (2020)
 - [NISQ に向けた量子化学理論の開発](null), 楊天任, 御手洗光祐, 理論化学会誌 フロンティア **2**, 187 (2020)
 - [量子コンピュータを用いた変分アルゴリズムと機械学習](null), 御手洗光祐, 藤井啓祐, 日本物理学会誌 **74**, 604 (2019)
