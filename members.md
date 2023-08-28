@@ -47,7 +47,7 @@ permalink: /members/
     <div class="member-name">御手洗光祐 Kosuke MITARAI</div>
     <div class="member-position">position</div>
     <div class="member-link">email: mitarai.kosuke.es<at>osaka-u.ac.jp</div>
-    <div class="member-link"><a href="https://scholar.google.com/citations?user=TfsGcnMAAAAJ">Google Scholar</a></div>
+    <div class="member-link"><a href="https://scholar.google.com/citations?user=TfsGcnMAAAAJ">Google Scholar</a>/<a href="https://researchmap.jp/kosuke-mitarai">researchmap</a></div>
   </div>
 </div>
 
