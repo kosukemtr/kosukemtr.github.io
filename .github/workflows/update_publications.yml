@@ -42,8 +42,6 @@ jobs:
         echo "title: Publications" >> publications.md
         echo "---" >> publications.md
         echo "" >> publications.md
-        echo "## Publications" >> publications.md
-        echo "" >> publications.md
         # Loop through each extracted paper and add it to the content
         while read -r paper; do
           JOURNAL_NAME=$(echo "$paper" | jq -r '.publication_name.en')
@@ -51,8 +49,9 @@ jobs:
           STARTING_PAGE=$(echo "$paper" | jq -r '.starting_page')
           TITLE=$(echo "$paper" | jq -r '.paper_title.en')
           AUTHORS=$(echo "$paper" | jq -r '.authors.en | map(.name) | join(", ")')
-      
-          echo "- $TITLE, $AUTHORS, **$JOURNAL_NAME** *$VOLUME*, $STARTING_PAGE" >> publications.md
+          DOI=$(echo "$paper" | jq -r '.identifiers.doi[0]')
+          
+          echo "- [$TITLE](https://doi.org/$DOI), $AUTHORS, *$JOURNAL_NAME* **$VOLUME**, $STARTING_PAGE" >> publications.md
         done <<< "$PAPERS"
 
     - name: Commit and Push Changes
