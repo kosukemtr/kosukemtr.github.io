@@ -49,10 +49,13 @@ jobs:
           STARTING_PAGE=$(echo "$paper" | jq -r '.starting_page')
           TITLE=$(echo "$paper" | jq -r '.paper_title.en')
           AUTHORS=$(echo "$paper" | jq -r '.authors.en | map(.name) | join(", ")')
+          PUBLICATION_DATE=$(echo "$entry" | jq -r '.publication_date')
           YEAR=$(echo "$PUBLICATION_DATE" | cut -d'-' -f1)
+          echo $YEAR
+          echo $PUBLICATION_DATE
           DOI=$(echo "$paper" | jq -r '.identifiers.doi[0]')
           
-          echo "- [$TITLE](https://doi.org/$DOI), $AUTHORS, *$JOURNAL_NAME* **$VOLUME**, $STARTING_PAGE ($YEAR)" >> publications.md
+          echo "- $AUTHORS, [$TITLE](https://doi.org/$DOI), *$JOURNAL_NAME* **$VOLUME**, $STARTING_PAGE ($YEAR)" >> publications.md
         done <<< "$PAPERS"
     - name: Fetch Misc Data from ResearchMap
       run: |
@@ -69,7 +72,7 @@ jobs:
           # Extract common values
           TITLE_EN=$(echo "$entry" | jq -r '.paper_title.en // empty')
           
-          if [ -n "$TITLE_JA" ]; then
+          if [ -n "$TITLE_EN" ]; then
             AUTHORS=$(echo "$entry" | jq -r '.authors.en | map(.name) | join(", ")')
             DESCRIPTION=$(echo "$entry" | jq -r '.description.en')
             PUBLICATION_DATE=$(echo "$entry" | jq -r '.publication_date')
@@ -83,7 +86,7 @@ jobs:
               ARXIV_YEAR=$(echo "$ARXIV_ID" | cut -d':' -f2)  # Extract the year from arXiv ID
               
               # Generate the content for the publications page
-              echo "- [$TITLE_EN]($ARXIV_URL), $AUTHORS, $ARXIV_LINK ($ARXIV_YEAR)" >> publications.md
+              echo "- $AUTHORS, [$TITLE_EN]($ARXIV_URL), $ARXIV_LINK ($ARXIV_YEAR)" >> publications.md
             fi
           fi
         done <<< "$MISC_ENTRIES"
@@ -103,6 +106,7 @@ jobs:
             DESCRIPTION=$(echo "$entry" | jq -r '.description.ja')
             VOLUME=$(echo "$paper" | jq -r '.volume')
             STARTING_PAGE=$(echo "$paper" | jq -r '.starting_page')
+            PUBLICATION_DATE=$(echo "$entry" | jq -r '.publication_date')
             YEAR=$(echo "$PUBLICATION_DATE" | cut -d'-' -f1)
             DOI=$(echo "$entry" | jq -r '.identifiers.doi[0]')
             
