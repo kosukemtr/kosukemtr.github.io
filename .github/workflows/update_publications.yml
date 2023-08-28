@@ -58,8 +58,14 @@ jobs:
         # Use curl to fetch data from the ResearchMap API for misc entries
         MISC_API_RESPONSE=$(curl -s -X GET "https://api.researchmap.jp/kosuke-mitarai/misc")
         
+            # Debug output
+        echo "MISC_API_RESPONSE: $MISC_API_RESPONSE"
+        
         # Parse the JSON response using jq and extract relevant data
         MISC_ENTRIES=$(echo "$MISC_API_RESPONSE" | jq -c '.items[]')
+        
+        # Debug output
+        echo "MISC_ENTRIES: $MISC_ENTRIES"
         
         # Generate Markdown content for both Japanese and English articles
         echo "## Publications" > publications.md
