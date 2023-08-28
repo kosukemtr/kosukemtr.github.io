@@ -1,0 +1,61 @@
+name: Update Publications
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Run daily at midnight
+
+jobs:
+  update_publications:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7
+    
+    - name: Install dependencies
+      run: |
+        gem install bundler
+        bundle install
+    
+    - name: Fetch Data from ResearchMap
+      run: |
+        # Use curl to fetch data from the ResearchMap API
+        API_RESPONSE=$(curl -s -X GET "https://api.researchmap.jp/kosuke-mitarai/published_papers")
+        
+        # Parse the JSON response using jq and extract relevant data
+        PAPERS=$(echo "$API_RESPONSE" | jq -c '.items[]')
+        
+        # Generate Markdown content for your Jekyll site based on extracted data
+        # Generate the content for the publications page
+        echo "---" > publications.md
+        echo "layout: page" >> publications.md
+        echo "title: Publications" >> publications.md
+        echo "---" >> publications.md
+        echo "" >> publications.md
+        echo "## Publications" >> publications.md
+        echo "" >> publications.md
+        # Loop through each extracted paper and add it to the content
+        while read -r paper; do
+          JOURNAL_NAME=$(echo "$paper" | jq -r '.publication_name.en')
+          VOLUME=$(echo "$paper" | jq -r '.volume')
+          STARTING_PAGE=$(echo "$paper" | jq -r '.starting_page')
+          TITLE=$(echo "$paper" | jq -r '.paper_title.en')
+          AUTHORS=$(echo "$paper" | jq -r '.authors.en | map(.name) | join(", ")')
+      
+          echo "- $TITLE, $AUTHORS, **$JOURNAL_NAME** *$VOLUME*, $STARTING_PAGE" >> publications.md
+        done <<< "$PAPERS"
+
+    
+    - name: Build Jekyll Site
+      run: bundle exec jekyll build
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_dir: _site
