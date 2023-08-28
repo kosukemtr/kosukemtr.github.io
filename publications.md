@@ -1,36 +1,8 @@
----
-layout: page
-title: Publications
----
-
-- [Perturbation theory with quantum signal processing](https://doi.org/10.22331/q-2023-05-12-1000), Kosuke Mitarai, Kiichiro Toyoizumi, Wataru Mizukami, *Quantum* **7**, 1000
-- [Subspace variational quantum simulator](https://doi.org/10.1103/physrevresearch.5.023078), Kentaro Heya, Ken M. Nakanishi, Kosuke Mitarai, Zhiguang Yan, Kun Zuo, Yasunari Suzuki, Takanori Sugiyama, Shuhei Tamate, Yutaka Tabuchi, Keisuke Fujii, Yasunobu Nakamura, *Physical Review Research* **5**, 023078
-- [Pricing Multi-asset Derivatives by Variational Quantum Algorithms](https://doi.org/10.1109/tqe.2023.3269525), Kenji Kubo, Koichi Miyamoto, Kosuke Mitarai, Keisuke Fujii, *IEEE Transactions on Quantum Engineering* **4**, 1
-- [Parametric t-stochastic neighbor embedding with quantum neural network](https://doi.org/10.1103/physrevresearch.4.043199), Yoshiaki Kawase, Kosuke Mitarai, Keisuke Fujii, *Physical Review Research* **4**, 043199
-- [Constructing Local Bases for a Deep Variational Quantum Eigensolver for Molecular Systems](https://doi.org/10.1103/physrevapplied.18.064051), Luca Erhart, Kosuke Mitarai, Wataru Mizukami, Keisuke Fujii, *Physical Review Applied* **18**, 064051
-- [Quantifying fermionic nonlinearity of quantum circuits](https://doi.org/10.1103/PhysRevResearch.4.043100), Shigeo Hakkaku, Yuichiro Tashima, Kosuke Mitarai, Wataru Mizukami, Keisuke Fujii, *Physical Review Research* **4**, 043100
-- [Local Variational Quantum Compilation of Large-Scale Hamiltonian Dynamics](https://doi.org/10.1103/prxquantum.3.040302), Kaoru Mizuta, Yuya O. Nakagawa, Kosuke Mitarai, Keisuke Fujii, *PRX Quantum* **3**, 040302
-- [Quantum expectation-value estimation by computational basis sampling](https://doi.org/10.1103/physrevresearch.4.033173), Masaya Kohda, Ryosuke Imai, Keita Kanno, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, *Physical Review Research* **4**, 033173
-- [Quadratic Clifford expansion for efficient benchmarking and initialization of variational quantum algorithms](https://doi.org/10.1103/physrevresearch.4.033012), Kosuke Mitarai, Yasunari Suzuki, Wataru Mizukami, Yuya O. Nakagawa, Keisuke Fujii, *Physical Review Research* **4**, 033012
-- [Parent Hamiltonian as a benchmark problem for variational quantum eigensolvers](https://doi.org/10.1103/PhysRevA.105.052415), Fumiyoshi Kobayashi, Kosuke Mitarai, Keisuke Fujii, *Physical Review A* **105**, 052415
-- [Deep Variational Quantum Eigensolver: a divide-and-conquer method for solving a larger problem with smaller size quantum computers](https://doi.org/10.1103/PRXQuantum.3.010346), Keisuke Fujii, Kaoru Mizuta, Hiroshi Ueda, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, *PRXQuantum* **3**, 010346
-- [Calculating transition amplitudes by variational quantum deflation](https://doi.org/10.1103/physrevresearch.4.013173), Yohei Ibe, Yuya O. Nakagawa, Nathan Earnest, Takahiro Yamamoto, Kosuke Mitarai, Qi Gao, Takao Kobayashi, *Physical Review Research* **4**, 013173
-- [Computational power of one- and two-dimensional dual-unitary quantum circuits](https://doi.org/10.22331/q-2022-01-24-631), Ryotaro Suzuki, Kosuke Mitarai, Keisuke Fujii, *Quantum* **6**, 631
-- [Sampling-based quasiprobability simulation for fault-tolerant quantum error correction on the surface codes under coherent noise](https://doi.org/10.1103/physrevresearch.3.043130), Shigeo Hakkaku, Kosuke Mitarai, Keisuke Fujii, *Physical Review Research* **3**, 043130
-- [Qulacs: a fast and versatile quantum circuit simulator for research purpose](https://doi.org/10.22331/q-2021-10-06-559), Yasunari Suzuki, Yoshiaki Kawase, Yuya Masumura, Yuria Hiraga, Masahiro Nakadai, Jiabao Chen, Ken M. Nakanishi, Kosuke Mitarai, Ryosuke Imai, Shiro Tamiya, Takahiro Yamamoto, Tennin Yan, Toru Kawakubo, Yuya O. Nakagawa, Yohei Ibe, Youyuan Zhang, Hirotsugu Yamashita, Hikaru Yoshimura, Akihiro Hayashi, Keisuke Fujii, *Quantum* **5**, 559
-- [Variational quantum algorithms](https://doi.org/10.1038/s42254-021-00348-9), M. Cerezo, Andrew Arrasmith, Ryan Babbush, Simon C. Benjamin, Suguru Endo, Keisuke Fujii, Jarrod R. McClean, Kosuke Mitarai, Xiao Yuan, Lukasz Cincio, Patrick J. Coles, *Nature Reviews Physics* **3**, 625
-- [Experimental quantum kernel trick with nuclear spins in a solid](https://doi.org/10.1038/s41534-021-00423-0), Takeru Kusumoto, Kosuke Mitarai, Keisuke Fujii, Masahiro Kitagawa, Makoto Negoro, *npj Quantum Information* **7**, 94
-- [Learning temporal data with a variational quantum recurrent neural network](https://doi.org/10.1103/physreva.103.052414), Yuto Takaki, Kosuke Mitarai, Makoto Negoro, Keisuke Fujii, Masahiro Kitagawa, *Physical Review A* **103**, 052414
-- [Constructing a virtual two-qubit gate by sampling single-qubit operations](https://doi.org/10.1088/1367-2630/abd7bc), Kosuke Mitarai, Keisuke Fujii, *New Journal of Physics* **23**, 023021
-- [Overhead for simulating a non-local channel with local channels by quasiprobability sampling](https://doi.org/10.22331/q-2021-01-28-388), Kosuke Mitarai, Keisuke Fujii, *Quantum* **5**, 388
-- [Toward NMR Quantum Reservoir Computing](https://doi.org/10.1007/978-981-13-1687-6_19), Makoto Negoro, Kosuke Mitarai, Kohei Nakajima, Keisuke Fujii, *Natural Computing Series* **null**, 451
-- [Variational quantum algorithm for nonequilibrium steady states](https://doi.org/10.1103/physrevresearch.2.043289), Nobuyuki Yoshioka, Yuya O. Nakagawa, Kosuke Mitarai, Keisuke Fujii, *Physical Review Research* **2**, 043289
-- [Orbital optimized unitary coupled cluster theory for quantum computer](https://doi.org/10.1103/physrevresearch.2.033421), Wataru Mizukami, Kosuke Mitarai, Yuya O. Nakagawa, Takahiro Yamamoto, Tennin Yan, Yu-ya Ohnishi, *Physical Review Research* **2**, 033421
-- [An advanced 2ω method enabling thermal conductivity measurement for various sample thicknesses: From thin films to bulk materials](https://doi.org/10.1063/5.0007302), Kosuke Mitarai, Ryo Okuhata, Jinichiro Chikada, Tatsuya Kaneko, Yuto Uematsu, Yuki Komatsubara, Takafumi Ishibe, Yoshiaki Nakamura, *Journal of Applied Physics* **128**, 015102
-- [Theory of analytical energy derivatives for the variational quantum eigensolver](https://doi.org/10.1103/PhysRevResearch.2.013129), Kosuke Mitarai, Yuya O. Nakagawa, Wataru Mizukami, *Physical Review Research* **2**, 013129
-- [Subspace-search variational quantum eigensolver for excited states](https://doi.org/10.1103/PhysRevResearch.1.033062), Ken M Nakanishi, Kosuke Mitarai, Keisuke Fujii, *Physical Review Research* **1**, 033062
-- [Methodology for replacing indirect measurements with direct measurements](https://doi.org/10.1103/PhysRevResearch.1.013006), Kosuke Mitarai, Keisuke Fujii, *Physical Review Research* **1**, 013006
-- [Generalization of the output of variational quantum eigensolver by parameter interpolation with low-depth ansatz](https://doi.org/10.1103/PhysRevApplied.11.044087), Kosuke Mitarai, Tennin Yan, Keisuke Fujii, *PHYSICAL REVIEW APPLIED* **11**, 044087
-- [Boosting Computational Power through Spatial Multiplexing in Quantum Reservoir Computing](https://doi.org/10.1103/PhysRevApplied.11.034021), Kohei Nakajima, Keisuke Fujii, Makoto Negoro, Kosuke Mitarai, Masahiro Kitagawa, *PHYSICAL REVIEW APPLIED* **11**, 034021
-- [Quantum Analog-Digital Conversion](https://doi.org/10.1103/PhysRevA.99.012301), Kosuke Mitarai, Masahiro Kitagawa, Keisuke Fujii, *PHYSICAL REVIEW A* **99**, 012301
-- [Quantum Circuit Learning](https://doi.org/10.1103/PhysRevA.98.032309), Kosuke Mitarai, Makoto Negoro, Masahiro Kitagawa, Keisuke Fujii, *PHYSICAL REVIEW A* **98**, 032309
+## Publications
+- 量子特徴量と量子ニューラルネットワーク, 御手洗 光祐, **日本神経回路学会誌**, null, [DOI](10.3902/jnns.29.202)
+- テンソルネットワークと機械学習, 御手洗光祐, **数理科学**, null, [DOI](null)
+- 変分量子アルゴリズムと量子機械学習, 御手洗光祐, **電子情報通信学会誌**, null, [DOI](null)
+- 量子計算は機械学習に使えるか -近未来/誤り体制量子計算のための量子アルゴリズム-, 御手洗 光祐, **情報処理**, null, [DOI](null)
+- 化学計算・機械学習 量子コンピューターの2つの挑戦, 御手洗光祐, **日経サイエンス 2020年2月号**, null, [DOI](null)
+- NISQ に向けた量子化学理論の開発, 楊天任, 御手洗光祐, **理論化学会誌 フロンティア**, null, [DOI](null)
+- 量子コンピュータを用いた変分アルゴリズムと機械学習, 御手洗光祐, 藤井啓祐, **日本物理学会誌**, null, [DOI](null)
