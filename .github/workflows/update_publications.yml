@@ -110,8 +110,17 @@ jobs:
             YEAR=$(echo "$PUBLICATION_DATE" | cut -d'-' -f1)
             DOI=$(echo "$entry" | jq -r '.identifiers.doi[0]')
             
-            # Generate the content for the publications page
-            echo "- $AUTHORS, [$TITLE_JA]($DOI), $JOURNAL_NAME, $VOLUME, $STARTING_PAGE, ($YEAR)" >> publications.md
+            # Create the basic publication entry
+            PUBLICATION_ENTRY="- [$TITLE_JA]($DOI), $AUTHORS, $JOURNAL_NAME, ($YEAR)"
+            
+            # Check for volume and starting page
+            VOLUME=$(echo "$entry" | jq -r '.volume')
+            STARTING_PAGE=$(echo "$entry" | jq -r '.starting_page')
+            
+            # Add volume and starting page if available
+            if [ "$VOLUME" != "null" ] && [ "$STARTING_PAGE" != "null" ]; then
+              PUBLICATION_ENTRY="$PUBLICATION_ENTRY, $VOLUME, $STARTING_PAGE"
+            fi
           fi
         done <<< "$MISC_ENTRIES"
 
