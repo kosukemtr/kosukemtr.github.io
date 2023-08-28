@@ -53,7 +53,33 @@ jobs:
           
           echo "- [$TITLE](https://doi.org/$DOI), $AUTHORS, *$JOURNAL_NAME* **$VOLUME**, $STARTING_PAGE" >> publications.md
         done <<< "$PAPERS"
+    - name: Fetch Misc Data from ResearchMap
+      run: |
+        # Use curl to fetch data from the ResearchMap API for misc entries
+        MISC_API_RESPONSE=$(curl -s -X GET "https://api.researchmap.jp/kosuke-mitarai/misc")
+        
+        # Parse the JSON response using jq and extract relevant data
+        MISC_ENTRIES=$(echo "$MISC_API_RESPONSE" | jq -c '.items[]')
+        
+        # Generate Markdown content for both Japanese and English articles
+        echo "## Publications" > publications.md
+        while read -r entry; do
+          TITLE_JA=$(echo "$entry" | jq -r '.paper_title.ja')
+          TITLE_EN=$(echo "$entry" | jq -r '.paper_title.en')
+          AUTHORS=$(echo "$entry" | jq -r '.authors.ja | map(.name) | join(", ")')
+          JOURNAL_NAME=$(echo "$entry" | jq -r '.publication_name.ja')
+          DESCRIPTION=$(echo "$entry" | jq -r '.description.ja')
+          
+          if [ -n "$TITLE_JA" ]; then
+            # This is a Japanese article
+            echo "- $TITLE_JA, $AUTHORS, **$JOURNAL_NAME**, $DESCRIPTION" >> publications.md
+          # elif [ -n "$TITLE_EN" ]; then
+            # This is an English article
+            # echo "- $TITLE_EN, $AUTHORS, **$JOURNAL_NAME**, $DESCRIPTION" >> publications.md
+          fi
+        done <<< "$MISC_ENTRIES"
 
+    
     - name: Commit and Push Changes
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
