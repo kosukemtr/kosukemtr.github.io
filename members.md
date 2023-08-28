@@ -22,6 +22,19 @@ permalink: /members/
   flex-grow: 1;
   align-items: flex-start; /* Align items at the top */
 }
+.member-name {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0; /* Reset margin to remove extra space */
+}
+
+.member-position {
+  margin: 0 0 10px; /* Add some spacing below the position */
+}
+
+.member-link {
+  margin: 0; /* Reset margin for the link */
+}
 </style>
 
 ## Staffs
@@ -31,9 +44,9 @@ permalink: /members/
     <img src="{{ site.baseurl }}/assets/images/KosukeMitarai.jpg" alt="Kosuke Mitarai" class="member-portrait">
   </div>
   <div class="member-info">
-    <h3>御手洗光祐 Kosuke MITARAI</h3>
-    <p>Position</p>
-    <p><a href="https://scholar.google.com/citations?user=TfsGcnMAAAAJ">Google Scholar</a></p>
+    <div class="member-name">御手洗光祐 Kosuke MITARAI</div>
+    <div class="member-position">position</div>
+    <div class="member-link"><a href="https://scholar.google.com/citations?user=TfsGcnMAAAAJ">Google Scholar</a></div>
   </div>
 </div>
 
