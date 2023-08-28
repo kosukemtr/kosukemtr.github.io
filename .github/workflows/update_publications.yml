@@ -121,6 +121,7 @@ jobs:
             if [ "$VOLUME" != "null" ] && [ "$STARTING_PAGE" != "null" ]; then
               PUBLICATION_ENTRY="$PUBLICATION_ENTRY, $VOLUME, $STARTING_PAGE"
             fi
+            echo "- $PUBLICATION_ENTRY" >> publications.md
           fi
         done <<< "$MISC_ENTRIES"
 
