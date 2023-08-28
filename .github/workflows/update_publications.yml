@@ -104,14 +104,14 @@ jobs:
             AUTHORS=$(echo "$entry" | jq -r '.authors.ja | map(.name) | join(", ")')
             JOURNAL_NAME=$(echo "$entry" | jq -r '.publication_name.ja')
             DESCRIPTION=$(echo "$entry" | jq -r '.description.ja')
-            VOLUME=$(echo "$paper" | jq -r '.volume')
-            STARTING_PAGE=$(echo "$paper" | jq -r '.starting_page')
+            VOLUME=$(echo "$entry" | jq -r '.volume')
+            STARTING_PAGE=$(echo "$entry" | jq -r '.starting_page')
             PUBLICATION_DATE=$(echo "$entry" | jq -r '.publication_date')
             YEAR=$(echo "$PUBLICATION_DATE" | cut -d'-' -f1)
             DOI=$(echo "$entry" | jq -r '.identifiers.doi[0]')
             
             # Generate the content for the publications page
-            echo "- [$TITLE_JA]($DOI), $AUTHORS, $JOURNAL_NAME, $VOLUME, $STARTING_PAGE, ($YEAR)" >> publications.md
+            echo "- $AUTHORS, [$TITLE_JA]($DOI), $JOURNAL_NAME, $VOLUME, $STARTING_PAGE, ($YEAR)" >> publications.md
           fi
         done <<< "$MISC_ENTRIES"
 
