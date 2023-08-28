@@ -121,7 +121,7 @@ jobs:
             
             # Add volume and starting page if available
             if [ "$VOLUME" != "null" ] && [ "$STARTING_PAGE" != "null" ]; then
-              PUBLICATION_ENTRY="- [$TITLE_JA]($DOI), $AUTHORS, $JOURNAL_NAME **$VOLUME**, $STARTING_PAGE ($YEAR)"
+              PUBLICATION_ENTRY="- $AUTHORS, [$TITLE_JA]($DOI), $JOURNAL_NAME **$VOLUME**, $STARTING_PAGE ($YEAR)"
             fi
             echo "$PUBLICATION_ENTRY" >> publications.md
           fi
