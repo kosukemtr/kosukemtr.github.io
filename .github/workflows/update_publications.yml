@@ -58,22 +58,30 @@ jobs:
         # Use curl to fetch data from the ResearchMap API for misc entries
         MISC_API_RESPONSE=$(curl -s -X GET "https://api.researchmap.jp/kosuke-mitarai/misc")
         
-        # Split the multi-line JSON response into individual entries
-        IFS=$'\n' read -rd '' -a MISC_ENTRIES <<< "$(echo "$MISC_API_RESPONSE" | jq -c '.items[]')"
+        # Debug output
+        echo "MISC_API_RESPONSE: $MISC_API_RESPONSE"
         
-        # Generate Markdown content for Japanese articles
+        # Parse the JSON response using jq and extract relevant data
+        MISC_ENTRIES=$(echo "$MISC_API_RESPONSE" | jq -c '.items[]')
+        
+        # Debug output
+        echo "MISC_ENTRIES: $MISC_ENTRIES"
+        
+        # Generate Markdown content for both Japanese and English articles
         echo "## Publications" > publications.md
-        for entry in "${MISC_ENTRIES[@]}"; do
+        while read -r entry; do
           TITLE_JA=$(echo "$entry" | jq -r '.paper_title.ja')
           AUTHORS=$(echo "$entry" | jq -r '.authors.ja | map(.name) | join(", ")')
           JOURNAL_NAME=$(echo "$entry" | jq -r '.publication_name.ja')
           DESCRIPTION=$(echo "$entry" | jq -r '.description.ja')
+          DOI=$(echo "$entry" | jq -r '.identifiers.doi[0]')
           
           if [ -n "$TITLE_JA" ]; then
             # This is a Japanese article
-            echo "- $TITLE_JA, $AUTHORS, **$JOURNAL_NAME**, $DESCRIPTION" >> publications.md
+            echo "- $TITLE_JA, $AUTHORS, **$JOURNAL_NAME**, $DESCRIPTION, [DOI: $DOI](https://doi.org/$DOI)" >> publications.md
           fi
-        done
+        done <<< "$MISC_ENTRIES"
+
 
 
     
