@@ -111,7 +111,7 @@ jobs:
             DOI=$(echo "$entry" | jq -r '.identifiers.doi[0]')
             
             # Create the basic publication entry
-            PUBLICATION_ENTRY="- [$TITLE_JA]($DOI), $AUTHORS, $JOURNAL_NAME, ($YEAR)"
+            PUBLICATION_ENTRY="- [$TITLE_JA]($DOI), $AUTHORS, $JOURNAL_NAME ($YEAR)"
             
             # Check for volume and starting page
             VOLUME=$(echo "$entry" | jq -r '.volume')
