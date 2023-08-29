@@ -15,7 +15,7 @@ permalink: /about/
 - Kosuke Mitarai, Yuya O. Nakagawa, Wataru Mizukami, Theory of analytical energy derivatives for the variational quantum eigensolver, Physical Review Research **2**, 013129 (2020)
 
 ## 量子機械学習
-![VQEg-generated dataset](https://github.com/Qulacs-Osaka/VQE-generated-dataset/blob/main/doc%2Fimage%2Ftsne.jpg)
+![VQEg-generated dataset]({{ site.baseurl }}/assets/images/KosukeMitarai.jpg)
 機械学習は目覚ましい成果を挙げながら社会実装が進んでいます。この機械学習という分野に量子コンピュータの計算能力を持ち込み、さらに高度化することはできるでしょうか？
 
 - Takeru Kusumoto, Kosuke Mitarai, Keisuke Fujii, Masahiro Kitagawa, Makoto Negoro, Experimental quantum kernel trick with nuclear spins in a solid, npj Quantum Information **7**, 94 (2021)
