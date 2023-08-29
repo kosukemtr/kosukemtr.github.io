@@ -7,7 +7,7 @@ permalink: /about/
 量子コンピュータは特定の計算タスクを従来型のコンピュータよりも高速に実行できることが知られています。このグループでは、量子コンピュータの計算能力を使ってどのようなことができそうか、また量子コンピュータの力をさらに引き出すにはどうすればよいかを研究しています。主なテーマは以下の通りです。
 
 ## 量子シミュレーションのための量子アルゴリズム
-![phase-estimation]({{ site.baseurl }}/assets/images/quantikz.svg)
+![phase-estimation]({{ site.baseurl }}/assets/images/phase-estimation.svg)
 量子コンピュータが最も得意とするのは、量子力学に従う物理系のシミュレーションです。従来型のコンピュータで量子的な重ね合わせ状態をシミュレートするには、一般に物理系のサイズに対して指数的な計算量が必要となってしまいますが、量子コンピュータであれば多項式の計算量でシミュレートできることが知られています。特に分子や物質の電子状態をシミュレートする量子化学計算（第一原理計算）は、産業的にも良く利用されている計算タスクであり、量子コンピュータの一番の応用先です。
 
 - Kosuke Mitarai, Kiichiro Toyoizumi, Wataru Mizukami, Perturbation theory with quantum signal processing, Quantum **7**, 1000 (2023)
