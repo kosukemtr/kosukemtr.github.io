@@ -134,10 +134,13 @@ jobs:
     - name: Check for Changes
       id: check_changes
       run: |
-        # Check if there are any changes in publications.md
+        git diff --exit-code publications.md || echo "changed=yes" >> $GITHUB_ENV
         if [[ -z $(git diff -- publications.md) ]]; then
           echo "No changes to publications.md. Exiting..."
+          echo "changed=no" >> $GITHUB_ENV
           exit 0
+        else
+          exit 1
         fi
     
     - name: Commit and Push Changes
