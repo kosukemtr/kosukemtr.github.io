@@ -128,7 +128,8 @@ jobs:
         done <<< "$MISC_ENTRIES"
 
 
-
+    - name: Print Diff
+      run: git diff publications.md
     
     - name: Check for Changes
       id: check_changes
