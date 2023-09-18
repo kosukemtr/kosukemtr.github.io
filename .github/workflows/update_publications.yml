@@ -111,18 +111,35 @@ jobs:
             PUBLICATION_DATE=$(echo "$entry" | jq -r '.publication_date')
             YEAR=$(echo "$PUBLICATION_DATE" | cut -d'-' -f1)
             DOI=$(echo "$entry" | jq -r '.identifiers.doi[0]')
-            
+            ARTICLE_URL=$(echo "$entry" | jq -r '.see_also[] | select(.label == "url") | .["@id"] | select(. != null) | head -n 1')
+            # Extract URL and DOI
+            ARTICLE_URL=$(echo "$entry" | jq -r '.see_also[] | select(.label == "url") | .["@id"] | select(. != null)')
+            DOI_URL=$(echo "$entry" | jq -r '.see_also[] | select(.label == "doi") | .["@id"] | select(. != null)')
+        
+            # Determine the link to use
+            LINK_TO_USE=""
+            if [ -n "$DOI_URL" ]; then
+              LINK_TO_USE="$DOI_URL"
+            elif [ -n "$ARTICLE_URL" ]; then
+              LINK_TO_USE="$ARTICLE_URL"
+            fi
+        
             # Create the basic publication entry
-            PUBLICATION_ENTRY="- [$TITLE_JA]($DOI), $AUTHORS, $JOURNAL_NAME ($YEAR)"
+            if [ -n "$LINK_TO_USE" ]; then
+              PUBLICATION_ENTRY="- [$TITLE_JA]($LINK_TO_USE), $AUTHORS, $JOURNAL_NAME ($YEAR)"
+            else
+              PUBLICATION_ENTRY="- $TITLE_JA, $AUTHORS, $JOURNAL_NAME ($YEAR)"
+            fi
             
             # Check for volume and starting page
-            VOLUME=$(echo "$entry" | jq -r '.volume')
-            STARTING_PAGE=$(echo "$entry" | jq -r '.starting_page')
-            
-            # Add volume and starting page if available
             if [ "$VOLUME" != "null" ] && [ "$STARTING_PAGE" != "null" ]; then
-              PUBLICATION_ENTRY="- $AUTHORS, [$TITLE_JA]($DOI), $JOURNAL_NAME **$VOLUME**, $STARTING_PAGE ($YEAR)"
+              if [ -n "$LINK_TO_USE" ]; then
+                PUBLICATION_ENTRY="- $AUTHORS, [$TITLE_JA]($LINK_TO_USE), $JOURNAL_NAME **$VOLUME**, $STARTING_PAGE ($YEAR)"
+              else
+                PUBLICATION_ENTRY="- $AUTHORS, $TITLE_JA, $JOURNAL_NAME **$VOLUME**, $STARTING_PAGE ($YEAR)"
+              fi
             fi
+        
             echo "$PUBLICATION_ENTRY" >> publications.md
           fi
         done <<< "$MISC_ENTRIES"
