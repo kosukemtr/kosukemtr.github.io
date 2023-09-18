@@ -111,9 +111,8 @@ jobs:
             PUBLICATION_DATE=$(echo "$entry" | jq -r '.publication_date')
             YEAR=$(echo "$PUBLICATION_DATE" | cut -d'-' -f1)
             # Extract URL and DOI
-            ARTICLE_URL=$(echo "$entry" | jq -r '.see_also[] | select(.label == "url") | .["@id"] | select(. != null)')
-            DOI_URL=$(echo "$entry" | jq -r '.see_also[] | select(.label == "doi") | .["@id"] | select(. != null)')
-        
+            ARTICLE_URL=$(echo "$entry" | jq -r '.see_also // [] | map(select(.label == "url")) | .[0]["@id"] // empty')
+            DOI_URL=$(echo "$entry" | jq -r '.see_also // [] | map(select(.label == "doi")) | .[0]["@id"] // empty')
             # Determine the link to use
             LINK_TO_USE=""
             if [ -n "$DOI_URL" ]; then
