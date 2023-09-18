@@ -88,7 +88,7 @@ jobs:
               ARXIV_YEAR=$(echo "$ARXIV_ID" | cut -d':' -f2)  # Extract the year from arXiv ID
               echo "$ARXIV_URL, $ARXIV_ID"
               # Generate the content for the publications page
-              echo "- $AUTHORS, [$TITLE_EN]($ARXIV_URL), $ARXIV_ID ($YEAR)" >> publications.md
+              echo "- $AUTHORS, [$TITLE_EN](https://arxiv.org/abs/$ARXIV_ID), $ARXIV_ID ($YEAR)" >> publications.md
             fi
           fi
         done <<< "$MISC_ENTRIES"
