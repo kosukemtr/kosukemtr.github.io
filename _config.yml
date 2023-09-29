@@ -1,4 +1,4 @@
-title: 大阪大学基礎工学研究科 御手洗グループ
+title: 大阪大学基礎工学研究科 御手洗研究室
 list_title: News
 timezone: Asia/Tokyo
 # author:
@@ -8,7 +8,7 @@ timezone: Asia/Tokyo
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  大阪大学大学院基礎工学研究科 システム創成専攻 電子光科学領域 御手洗グループ
+  大阪大学大学院基礎工学研究科 システム創成専攻 電子光科学領域 御手洗研究室
 
 # Build settings
 
