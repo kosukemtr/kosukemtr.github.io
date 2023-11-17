@@ -39,6 +39,7 @@ title: Publications
 
 ## arXiv preprints
 
+- Yusei Mori, Hideaki Hakoshima, Kyohei Sudo, Toshio Mori, Kosuke Mitarai, Keisuke Fujii, [Quantum Circuit Unoptimization](https://arxiv.org/abs/arXiv:2311.03805), arXiv:2311.03805 (2023)
 - Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, Yuya O. Nakagawa, [Classical variational optimization of PREPARE circuit for quantum phase estimation of quantum chemistry Hamiltonians](https://arxiv.org/abs/arXiv:2308.13770), arXiv:2308.13770 (2023)
 - Adam Siegel, Kosuke Mitarai, Keisuke Fujii, [Algorithmic error mitigation for quantum eigenvalues estimation](https://arxiv.org/abs/arXiv:2308.03879), arXiv:2308.03879 (2023)
 - Yuki Sano, Kosuke Mitarai, Naoki Yamamoto, Naoki Ishikawa, [Accelerating Grover Adaptive Search: Qubit and Gate Count Reduction Strategies with Higher-Order Formulations](https://arxiv.org/abs/arXiv:2308.01572), arXiv:2308.01572 (2023)
