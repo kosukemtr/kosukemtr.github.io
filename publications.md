@@ -39,6 +39,8 @@ title: Publications
 
 ## arXiv preprints
 
+- Kazuki Sakamoto, Hayata Morisaki, Junichi Haruna, Etsuko Itou, Keisuke Fujii, Kosuke Mitarai, [End-to-end complexity for simulating the Schwinger model on quantum computers](https://arxiv.org/abs/arXiv:2311.17388), arXiv:2311.17388 (2023)
+- Kohei Morimoto, Yusuke Takase, Kosuke Mitarai, Keisuke Fujii, [Continuous optimization by quantum adaptive distribution search](https://arxiv.org/abs/arXiv:2311.17353), arXiv:2311.17353 (2023)
 - Yusei Mori, Hideaki Hakoshima, Kyohei Sudo, Toshio Mori, Kosuke Mitarai, Keisuke Fujii, [Quantum Circuit Unoptimization](https://arxiv.org/abs/arXiv:2311.03805), arXiv:2311.03805 (2023)
 - Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, Yuya O. Nakagawa, [Classical variational optimization of PREPARE circuit for quantum phase estimation of quantum chemistry Hamiltonians](https://arxiv.org/abs/arXiv:2308.13770), arXiv:2308.13770 (2023)
 - Adam Siegel, Kosuke Mitarai, Keisuke Fujii, [Algorithmic error mitigation for quantum eigenvalues estimation](https://arxiv.org/abs/arXiv:2308.03879), arXiv:2308.03879 (2023)
