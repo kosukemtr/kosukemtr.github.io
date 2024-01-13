@@ -5,7 +5,9 @@ title: Publications
 
 ## Peer-reviewed
 
+- Mitsuki Katsuda, Kosuke Mitarai, Keisuke Fujii, [Simulation and performance analysis of quantum error correction with a rotated surface code under a realistic noise model](https://doi.org/10.1103/physrevresearch.6.013024), Physical Review Research **6**, null (2024)
 - Ken N. Okada, Keita Osaki, Kosuke Mitarai, Keisuke Fujii, [Classically optimized variational quantum eigensolver with applications to topological phases](https://doi.org/10.1103/physrevresearch.5.043217), Physical Review Research **5**, 043217 (2023)
+- Nozomu Kobayashi, Yoshiyuki Suimon, Koichi Miyamoto, Kosuke Mitarai, [The cross-sectional stock return predictions via quantum neural network and tensor network](https://doi.org/10.1007/s42484-023-00136-x), Quantum Machine Intelligence **5**, null (2023)
 - Kosuke Mitarai, Kiichiro Toyoizumi, Wataru Mizukami, [Perturbation theory with quantum signal processing](https://doi.org/10.22331/q-2023-05-12-1000), Quantum **7**, 1000 (2023)
 - Kentaro Heya, Ken M. Nakanishi, Kosuke Mitarai, Zhiguang Yan, Kun Zuo, Yasunari Suzuki, Takanori Sugiyama, Shuhei Tamate, Yutaka Tabuchi, Keisuke Fujii, Yasunobu Nakamura, [Subspace variational quantum simulator](https://doi.org/10.1103/physrevresearch.5.023078), Physical Review Research **5**, 023078 (2023)
 - Kenji Kubo, Koichi Miyamoto, Kosuke Mitarai, Keisuke Fujii, [Pricing Multi-asset Derivatives by Variational Quantum Algorithms](https://doi.org/10.1109/tqe.2023.3269525), IEEE Transactions on Quantum Engineering **4**, 1 (2023)
@@ -50,12 +52,10 @@ title: Publications
 - Akhil Pratap Singh, Kosuke Mitarai, Yasunari Suzuki, Kentaro Heya, Yutaka Tabuchi, Keisuke Fujii, Yasunobu Nakamura, [Experimental demonstration of a high-fidelity virtual two-qubit gate](https://arxiv.org/abs/arXiv:2307.03232), arXiv:2307.03232 (2023)
 - Leonardo Placidi, Ryuichiro Hataya, Toshio Mori, Koki Aoyama, Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, [MNISQ: A Large-Scale Quantum Circuit Dataset for Machine Learning on/for Quantum Computers in the NISQ era](https://arxiv.org/abs/arXiv:2306.16627), arXiv:2306.16627 (2023)
 - Yuichiro Nakano, Hideaki Hakoshima, Kosuke Mitarai, Keisuke Fujii, [QAOA-MC: Markov chain Monte Carlo enhanced by Quantum Alternating Operator Ansatz](https://arxiv.org/abs/arXiv:2305.08789), arXiv:2305.08789 (2023)
-- Nozomu Kobayashi, Yoshiyuki Suimon, Koichi Miyamoto, Kosuke Mitarai, [The cross-sectional stock return predictions via quantum neural network and tensor network](https://arxiv.org/abs/arXiv:2304.12501), arXiv:2304.12501 (2023)
 - Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-Selected Configuration Interaction: classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://arxiv.org/abs/arXiv:2302.11320), arXiv:2302.11320 (2023)
 - Akimoto Nakayama, Kosuke Mitarai, Leonardo Placidi, Takanori Sugimoto, Keisuke Fujii, [VQE-generated Quantum Circuit Dataset for Machine Learning](https://arxiv.org/abs/arXiv:2302.09751), arXiv:2302.09751 (2023)
 - Wataru Inoue, Koki Aoyama, Yusuke Teranishi, Keita Kanno, Yuya O. Nakagawa, Kosuke Mitarai, [Almost optimal measurement scheduling of molecular Hamiltonian via finite projective plane](https://arxiv.org/abs/arXiv:2301.07335), arXiv:2301.07335 (2023)
 - Iori Takeda, Souichi Takahira, Kosuke Mitarai, Keisuke Fujii, [Quantum-inspired algorithm applied to extreme learning](https://arxiv.org/abs/arXiv:2209.12452), arXiv:2209.12452 (2022)
-- Mitsuki Katsuda, Kosuke Mitarai, Keisuke Fujii, [Simulation and performance analysis of quantum error correction with a rotated surface code under a realistic noise model](https://arxiv.org/abs/arXiv:2204.11404), arXiv:2204.11404 (2022)
 - Norihito Shirai, Kenji Kubo, Kosuke Mitarai, Keisuke Fujii, [Quantum tangent kernel](https://arxiv.org/abs/arXiv:2111.02951), arXiv:2111.02951 (2021)
 - Naixu Guo, Kosuke Mitarai, Keisuke Fujii, [Nonlinear transformation of complex amplitudes via quantum singular value transformation](https://arxiv.org/abs/arXiv:2107.10764), arXiv:2107.10764 (2021)
 - Makoto Negoro, Kosuke Mitarai, Keisuke Fujii, Kohei Nakajima, Masahiro Kitagawa, [Machine learning with controllable quantum dynamics of a nuclear spin ensemble in a solid](https://arxiv.org/abs/arXiv:1806.10910), arXiv:1806.10910 (2018)
