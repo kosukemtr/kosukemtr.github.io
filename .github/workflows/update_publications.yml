@@ -148,7 +148,7 @@ jobs:
     - name: Check for Changes
       id: check_changes
       run: |
-        git diff --name-only -- publications.md | while read line; do
+        git diff publications.md | grep '^+' | grep -v '+++' | while read line; do
           # Process each changed line to extract and store relevant information
           # This is a placeholder, replace with actual command to extract titles or links
           echo "aaa"
