@@ -5,9 +5,9 @@ title: Publications
 
 ## Peer-reviewed
 
-- Mitsuki Katsuda, Kosuke Mitarai, Keisuke Fujii, [Simulation and performance analysis of quantum error correction with a rotated surface code under a realistic noise model](https://doi.org/10.1103/physrevresearch.6.013024), Physical Review Research **6**, null (2024)
+- Mitsuki Katsuda, Kosuke Mitarai, Keisuke Fujii, [Simulation and performance analysis of quantum error correction with a rotated surface code under a realistic noise model](https://doi.org/10.1103/physrevresearch.6.013024), Physical Review Research **6**, 013024 (2024)
 - Ken N. Okada, Keita Osaki, Kosuke Mitarai, Keisuke Fujii, [Classically optimized variational quantum eigensolver with applications to topological phases](https://doi.org/10.1103/physrevresearch.5.043217), Physical Review Research **5**, 043217 (2023)
-- Nozomu Kobayashi, Yoshiyuki Suimon, Koichi Miyamoto, Kosuke Mitarai, [The cross-sectional stock return predictions via quantum neural network and tensor network](https://doi.org/10.1007/s42484-023-00136-x), Quantum Machine Intelligence **5**, null (2023)
+- Nozomu Kobayashi, Yoshiyuki Suimon, Koichi Miyamoto, Kosuke Mitarai, [The cross-sectional stock return predictions via quantum neural network and tensor network](https://doi.org/10.1007/s42484-023-00136-x), Quantum Machine Intelligence **5**, 46 (2023)
 - Kosuke Mitarai, Kiichiro Toyoizumi, Wataru Mizukami, [Perturbation theory with quantum signal processing](https://doi.org/10.22331/q-2023-05-12-1000), Quantum **7**, 1000 (2023)
 - Kentaro Heya, Ken M. Nakanishi, Kosuke Mitarai, Zhiguang Yan, Kun Zuo, Yasunari Suzuki, Takanori Sugiyama, Shuhei Tamate, Yutaka Tabuchi, Keisuke Fujii, Yasunobu Nakamura, [Subspace variational quantum simulator](https://doi.org/10.1103/physrevresearch.5.023078), Physical Review Research **5**, 023078 (2023)
 - Kenji Kubo, Koichi Miyamoto, Kosuke Mitarai, Keisuke Fujii, [Pricing Multi-asset Derivatives by Variational Quantum Algorithms](https://doi.org/10.1109/tqe.2023.3269525), IEEE Transactions on Quantum Engineering **4**, 1 (2023)
