@@ -148,6 +148,12 @@ jobs:
     - name: Check for Changes
       id: check_changes
       run: |
+        git diff --name-only -- publications.md | while read line; do
+          # Process each changed line to extract and store relevant information
+          # This is a placeholder, replace with actual command to extract titles or links
+          echo "$(extracted information)"
+          echo "$(extracted information)" >> diff.txt
+        done
         git diff --exit-code publications.md || echo "changed=yes" >> $GITHUB_ENV
         if [[ -z $(git diff -- publications.md) ]]; then
           echo "No changes to publications.md. Exiting..."
@@ -171,11 +177,17 @@ jobs:
         git push origin main
 
 
-    # - name: Build Jekyll Site
-    #   run: bundle exec jekyll build
-    
-    # - name: Deploy to GitHub Pages
-    #   uses: peaceiris/actions-gh-pages@v3
-    #   with:
-    #     deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-    #     publish_dir: _site
+            
+    - name: Commit and Push New Post
+      if: env.changed == 'yes'  # Only run this step if a new post was created
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      run: |
+        mkdir -p ~/.ssh
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add _posts/
+        git commit -m "Add new post for updated publications"
+        git push origin main
