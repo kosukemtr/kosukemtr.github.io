@@ -5,6 +5,7 @@ title: Publications
 
 ## Peer-reviewed
 
+- Wataru Inoue, Koki Aoyama, Yusuke Teranishi, Keita Kanno, Yuya O. Nakagawa, Kosuke Mitarai, [Almost optimal measurement scheduling of molecular Hamiltonian via finite projective plane](https://doi.org/10.1103/physrevresearch.6.013096), Physical Review Research **6**, 013096 (2024)
 - Mitsuki Katsuda, Kosuke Mitarai, Keisuke Fujii, [Simulation and performance analysis of quantum error correction with a rotated surface code under a realistic noise model](https://doi.org/10.1103/physrevresearch.6.013024), Physical Review Research **6**, 013024 (2024)
 - Ken N. Okada, Keita Osaki, Kosuke Mitarai, Keisuke Fujii, [Classically optimized variational quantum eigensolver with applications to topological phases](https://doi.org/10.1103/physrevresearch.5.043217), Physical Review Research **5**, 043217 (2023)
 - Nozomu Kobayashi, Yoshiyuki Suimon, Koichi Miyamoto, Kosuke Mitarai, [The cross-sectional stock return predictions via quantum neural network and tensor network](https://doi.org/10.1007/s42484-023-00136-x), Quantum Machine Intelligence **5**, 46 (2023)
@@ -54,7 +55,6 @@ title: Publications
 - Yuichiro Nakano, Hideaki Hakoshima, Kosuke Mitarai, Keisuke Fujii, [QAOA-MC: Markov chain Monte Carlo enhanced by Quantum Alternating Operator Ansatz](https://arxiv.org/abs/arXiv:2305.08789), arXiv:2305.08789 (2023)
 - Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-Selected Configuration Interaction: classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://arxiv.org/abs/arXiv:2302.11320), arXiv:2302.11320 (2023)
 - Akimoto Nakayama, Kosuke Mitarai, Leonardo Placidi, Takanori Sugimoto, Keisuke Fujii, [VQE-generated Quantum Circuit Dataset for Machine Learning](https://arxiv.org/abs/arXiv:2302.09751), arXiv:2302.09751 (2023)
-- Wataru Inoue, Koki Aoyama, Yusuke Teranishi, Keita Kanno, Yuya O. Nakagawa, Kosuke Mitarai, [Almost optimal measurement scheduling of molecular Hamiltonian via finite projective plane](https://arxiv.org/abs/arXiv:2301.07335), arXiv:2301.07335 (2023)
 - Iori Takeda, Souichi Takahira, Kosuke Mitarai, Keisuke Fujii, [Quantum-inspired algorithm applied to extreme learning](https://arxiv.org/abs/arXiv:2209.12452), arXiv:2209.12452 (2022)
 - Norihito Shirai, Kenji Kubo, Kosuke Mitarai, Keisuke Fujii, [Quantum tangent kernel](https://arxiv.org/abs/arXiv:2111.02951), arXiv:2111.02951 (2021)
 - Naixu Guo, Kosuke Mitarai, Keisuke Fujii, [Nonlinear transformation of complex amplitudes via quantum singular value transformation](https://arxiv.org/abs/arXiv:2107.10764), arXiv:2107.10764 (2021)
