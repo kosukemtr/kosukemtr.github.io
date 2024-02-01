@@ -185,7 +185,7 @@ jobs:
             line=${line#+}
 
             # Extract the title and URL
-            title=$(echo "$line" | sed -E 's/\[([^]]+)\].*/\1/')
+            title=$(echo "$line" | sed -E 's/.*\[([^]]+)\].*/\1/')
             url=$(echo "$line" | grep -o 'http[s]*://[^)]*')
 
             # Sanitize the title to create a valid filename
