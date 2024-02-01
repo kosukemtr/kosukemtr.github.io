@@ -151,9 +151,8 @@ jobs:
         git diff publications.md | grep '^+' | grep -v '+++' | while read line; do
           # Process each changed line to extract and store relevant information
           # This is a placeholder, replace with actual command to extract titles or links
-          echo "aaa"
-          echo "$line"
-          # echo line >> diff.txt
+          echo "Added publication: $line"
+          echo "$line" >> diff.txt
         done
         git diff --exit-code publications.md || echo "changed=yes" >> $GITHUB_ENV
         if [[ -z $(git diff -- publications.md) ]]; then
