@@ -200,7 +200,7 @@ jobs:
             echo "title: New publication" >> "_posts/$filename"
             echo "---" >> "_posts/$filename"
             echo "" >> "_posts/$filename"
-            echo "$title is now published [here]($url)." >> "_posts/$filename"
+            echo "A new paper \"$title\" is now published [here]($url)." >> "_posts/$filename"
           fi
         done < diff.txt
 
