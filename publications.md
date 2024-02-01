@@ -5,6 +5,7 @@ title: Publications
 
 ## Peer-reviewed
 
+- Wataru Inoue, Koki Aoyama, Yusuke Teranishi, Keita Kanno, Yuya O. Nakagawa, Kosuke Mitarai, [Almost optimal measurement scheduling of molecular Hamiltonian via finite projective plane](https://doi.org/10.1103/physrevresearch.6.013096), Physical Review Research **6**, 013096 (2024)
 - Mitsuki Katsuda, Kosuke Mitarai, Keisuke Fujii, [Simulation and performance analysis of quantum error correction with a rotated surface code under a realistic noise model](https://doi.org/10.1103/physrevresearch.6.013024), Physical Review Research **6**, 013024 (2024)
 - Ken N. Okada, Keita Osaki, Kosuke Mitarai, Keisuke Fujii, [Classically optimized variational quantum eigensolver with applications to topological phases](https://doi.org/10.1103/physrevresearch.5.043217), Physical Review Research **5**, 043217 (2023)
 - Nozomu Kobayashi, Yoshiyuki Suimon, Koichi Miyamoto, Kosuke Mitarai, [The cross-sectional stock return predictions via quantum neural network and tensor network](https://doi.org/10.1007/s42484-023-00136-x), Quantum Machine Intelligence **5**, 46 (2023)
