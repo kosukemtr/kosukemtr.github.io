@@ -9,7 +9,9 @@ layout: home
 list_title: News
 ---
 
-![Banner Image](/assets/images/banner.png)
+<div class="homepage-banner">
+  <img src="/assets/images/banner.png" alt="Banner Image">
+</div>
 
 ## Research topic
 
