@@ -7,3 +7,5 @@
 #
 layout: home
 ---
+
+![Banner Image](/assets/images/banner.jpg)
