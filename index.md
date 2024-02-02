@@ -8,4 +8,4 @@
 layout: home
 ---
 
-![Banner Image](/assets/images/banner.jpg)
+![Banner Image](/assets/images/banner.png)
