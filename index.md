@@ -10,8 +10,8 @@ layout: home
 
 ![Banner Image](/assets/images/banner.png)
 
-## 研究内容
+## Research topic
 
 量子コンピュータは特定の計算タスクを従来型のコンピュータよりも高速に実行できることが知られています。このグループでは、量子コンピュータの計算能力を使ってどのようなことができそうか、また量子コンピュータの力をさらに引き出すにはどうすればよいかを研究しています。詳しくは [About](/about) をご覧ください。
 
-## Updates
+## Recent updates
