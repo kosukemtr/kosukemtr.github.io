@@ -6,6 +6,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
+list_title: News
 ---
 
 ![Banner Image](/assets/images/banner.png)
@@ -14,4 +15,3 @@ layout: home
 
 量子コンピュータは特定の計算タスクを従来型のコンピュータよりも高速に実行できることが知られています。このグループでは、量子コンピュータの計算能力を使ってどのようなことができそうか、また量子コンピュータの力をさらに引き出すにはどうすればよいかを研究しています。詳しくは [About](/about) をご覧ください。
 
-## Recent updates
