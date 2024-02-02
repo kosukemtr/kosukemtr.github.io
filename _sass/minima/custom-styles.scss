@@ -4,7 +4,8 @@
 .homepage-banner {
   width: 100vw; // Viewport width
   overflow: hidden; // Prevents horizontal scrollbar
-  
+  margin-left: 0;
+  padding-left: 0;  
   img {
     width: 100%;
     height: auto; // Maintains aspect ratio
