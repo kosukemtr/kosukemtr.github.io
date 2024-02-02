@@ -178,35 +178,40 @@ jobs:
 
     - name: Generate New Posts
       run: |
-        current_date=$(date +%Y-%m-%d)
-        while IFS= read -r line; do
-          if [[ $line == +* ]]; then
-            # Remove the leading '+' sign
-            line=${line#+}
-
-            # Extract the title and URL
-            title=$(echo "$line" | sed -E 's/.*\[([^]]+)\].*/\1/')
-            url=$(echo "$line" | grep -o 'http[s]*://[^)]*')
-
-            # Sanitize the title to create a valid filename
-            sanitized_title=$(echo "$title" | sed -E 's/[^a-zA-Z0-9]/-/g')
-
-            # Create a filename with the current date and sanitized title
-            filename="${current_date}-${sanitized_title}.md"
-            echo "Creating file: _posts/$filename"
-
-            # Create the post content
-            echo "---" > "_posts/$filename"
-            echo "title: New publication" >> "_posts/$filename"
-            echo "---" >> "_posts/$filename"
-            echo "" >> "_posts/$filename"
-            echo "A new paper \"$title\" is now published [here]($url)." >> "_posts/$filename"
+        if [ -f diff.txt ]; then
+          current_date=$(date +%Y-%m-%d)
+          while IFS= read -r line; do
+            if [[ $line == +* ]]; then
+              # Remove the leading '+' sign
+              line=${line#+}
+  
+              # Extract the title and URL
+              title=$(echo "$line" | sed -E 's/.*\[([^]]+)\].*/\1/')
+              url=$(echo "$line" | grep -o 'http[s]*://[^)]*')
+  
+              # Sanitize the title to create a valid filename
+              sanitized_title=$(echo "$title" | sed -E 's/[^a-zA-Z0-9]/-/g')
+  
+              # Create a filename with the current date and sanitized title
+              filename="${current_date}-${sanitized_title}.md"
+              echo "Creating file: _posts/$filename"
+  
+              # Create the post content
+              echo "---" > "_posts/$filename"
+              echo "title: New publication" >> "_posts/$filename"
+              echo "---" >> "_posts/$filename"
+              echo "" >> "_posts/$filename"
+              echo "A new paper \"$title\" is now published [here]($url)." >> "_posts/$filename"
+            fi
+          done < diff.txt
+          # Proceed to commit and push if new posts were created
+          if [ "$(ls -A _posts/*.md 2>/dev/null)" ]; then
+            git add _posts/*.md
+            git commit -m "Add new publication posts"
+            git push origin main
+          else
+            echo "No new posts to commit."
           fi
-        done < diff.txt
-
-    - name: Commit New Posts
-      run: |
-        git add _posts/*.md
-        git commit -m "Add new publication posts"
-        git push origin main
-
+        else
+          echo "diff.txt does not exist. Skipping post generation."
+        fi
