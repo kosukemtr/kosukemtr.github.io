@@ -2,13 +2,19 @@
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
 .homepage-banner {
-  width: 100vw; // Viewport width
-  overflow: hidden; // Prevents horizontal scrollbar
-  margin-left: 0;
-  padding-left: 0;  
+  margin-left: calc(-1 * $spacing-unit * 0.5); // 通常の表示における左側のパディングを相殺
+  margin-right: calc(-1 * $spacing-unit * 0.5); // 通常の表示における右側のパディングを相殺
+  width: calc(100% + $spacing-unit); // コンテナの実際の幅を補正
+  overflow: hidden;
+
   img {
     width: 100%;
-    height: auto; // Maintains aspect ratio
-    display: block; // Removes any default margin/padding
+    height: auto;
+  }
+
+  @media screen and (min-width: $on-large) {
+    margin-left: calc(-1 * $spacing-unit); // ラージスクリーンでの左側のパディングを相殺
+    margin-right: calc(-1 * $spacing-unit); // ラージスクリーンでの右側のパディングを相殺
+    width: calc(100% + ($spacing-unit * 2)); // ラージスクリーンにおけるコンテナの実際の幅を補正
   }
 }
