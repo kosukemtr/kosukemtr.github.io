@@ -30,3 +30,7 @@
     height: auto;
   }
 }
+
+html, body {
+  overflow-x: hidden; // ビューポートの横幅を超えるコンテンツがあっても横スクロールを発生させない
+}
