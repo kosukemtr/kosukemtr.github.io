@@ -46,9 +46,9 @@ permalink: /about/
 
 ### NISQ/early-FTQC/FTQC に向けたアルゴリズム開発
 
-<img src="/assets/images/qce.png" alt="Quadratic Clifford Expansion" height="auto" width="auto">
+<img src="/assets/images/qce.png" alt="Quadratic Clifford Expansion" style="width: 50%; height: auto;">
 
-現在実現している量子コンピュータはどれも NISQ (noisy intermediate scale quantum) と呼ばれるデバイスで、環境からのノイズが取り除き切れていません。この影響で演算を行うたびにある一定の確率でエラーを起こしてしまいます。量子誤り訂正はノイズをほぼ完全に取り除くことができる技術ですが、その実現には多大なオーバーヘッドが必要で、例えば量子化学計算で実用的な計算をするには 100 万量子ビット程度の集積化が必要とされています。現実的には 100 万量子ビットに到達して、理想的な誤り耐性量子コンピュータ (FTQC) を実現する途上で、ある程度ノイズが取り除かれているがすべては取り除けていないようなデバイス (early-FTQC) が出現することが予想されます。このような状況から、NISQ上、あるいは early-FTQC で実行可能なアプリケーションの探索が重要です。
+現在実現している量子コンピュータはどれも NISQ (noisy intermediate scale quantum) と呼ばれるデバイスで、環境からのノイズが取り除き切れていません。この影響で演算を行うたびにある一定の確率でエラーを起こしてしまいます。量子誤り訂正はノイズをほぼ完全に取り除くことができる技術ですが、その実現には多大なオーバーヘッドが必要で、例えば量子化学計算で実用的な計算をするには 100 万量子ビット程度の集積化が必要とされています。現実的には 100 万量子ビットに到達して、理想的な誤り耐性量子コンピュータ (FTQC) を実現する途上で、ある程度ノイズが取り除かれているがすべては取り除けていないようなデバイス (early-FTQC) が出現することが予想されます。このような状況から、NISQ/early-FTQC/FTQC の各段階で実行可能なアプリケーションの探索が重要です。
 
 - Adam Siegel, Kosuke Mitarai, Keisuke Fujii, Algorithmic error mitigation for quantum eigenvalues estimation, arXiv:2308.03879 (2023)
 - Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, Quantum-Selected Configuration Interaction: classical diagonalization of Hamiltonians in subspaces selected by quantum computers, arXiv:2302.11320 (2023)
