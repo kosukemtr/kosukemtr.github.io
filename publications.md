@@ -5,6 +5,7 @@ title: Publications
 
 ## Peer-reviewed
 
+- Kosuke Mitarai, [Machine learning assisted by quantum computers](https://doi.org/10.11470/jsaprev.240301), JSAP Review **2024**, 240301 (2024)
 - Wataru Inoue, Koki Aoyama, Yusuke Teranishi, Keita Kanno, Yuya O. Nakagawa, Kosuke Mitarai, [Almost optimal measurement scheduling of molecular Hamiltonian via finite projective plane](https://doi.org/10.1103/physrevresearch.6.013096), Physical Review Research **6**, 013096 (2024)
 - Mitsuki Katsuda, Kosuke Mitarai, Keisuke Fujii, [Simulation and performance analysis of quantum error correction with a rotated surface code under a realistic noise model](https://doi.org/10.1103/physrevresearch.6.013024), Physical Review Research **6**, 013024 (2024)
 - Ken N. Okada, Keita Osaki, Kosuke Mitarai, Keisuke Fujii, [Classically optimized variational quantum eigensolver with applications to topological phases](https://doi.org/10.1103/physrevresearch.5.043217), Physical Review Research **5**, 043217 (2023)
