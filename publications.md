@@ -5,6 +5,7 @@ title: Publications
 
 ## Peer-reviewed
 
+- Akhil Pratap Singh, Kosuke Mitarai, Yasunari Suzuki, Kentaro Heya, Yutaka Tabuchi, Keisuke Fujii, Yasunobu Nakamura, [Experimental demonstration of a high-fidelity virtual two-qubit gate](https://doi.org/10.1103/physrevresearch.6.013235), Physical Review Research **6**, 013235 (2024)
 - Kosuke Mitarai, [Machine learning assisted by quantum computers](https://doi.org/10.11470/jsaprev.240301), JSAP Review **2024**, 240301 (2024)
 - Wataru Inoue, Koki Aoyama, Yusuke Teranishi, Keita Kanno, Yuya O. Nakagawa, Kosuke Mitarai, [Almost optimal measurement scheduling of molecular Hamiltonian via finite projective plane](https://doi.org/10.1103/physrevresearch.6.013096), Physical Review Research **6**, 013096 (2024)
 - Mitsuki Katsuda, Kosuke Mitarai, Keisuke Fujii, [Simulation and performance analysis of quantum error correction with a rotated surface code under a realistic noise model](https://doi.org/10.1103/physrevresearch.6.013024), Physical Review Research **6**, 013024 (2024)
@@ -51,7 +52,6 @@ title: Publications
 - Adam Siegel, Kosuke Mitarai, Keisuke Fujii, [Algorithmic error mitigation for quantum eigenvalues estimation](https://arxiv.org/abs/arXiv:2308.03879), arXiv:2308.03879 (2023)
 - Yuki Sano, Kosuke Mitarai, Naoki Yamamoto, Naoki Ishikawa, [Accelerating Grover Adaptive Search: Qubit and Gate Count Reduction Strategies with Higher-Order Formulations](https://arxiv.org/abs/arXiv:2308.01572), arXiv:2308.01572 (2023)
 - Tsubasa Ichikawa, Hideaki Hakoshima, Koji Inui, Kosuke Ito, Ryo Matsuda, Kosuke Mitarai, Koichi Miyamoto, Wataru Mizukami, Kaoru Mizuta, Toshio Mori, Yuichiro Nakano, Akimoto Nakayama, Ken N. Okada, Takanori Sugimoto, Souichi Takahira, Nayuta Takemori, Satoyuki Tsukano, Hiroshi Ueda, Ryo Watanabe, Yuichiro Yoshida, Keisuke Fujii, [A comprehensive survey on quantum computer usage: How many qubits are employed for what purposes?](https://arxiv.org/abs/arXiv:2307.16130), arXiv:2307.16130 (2023)
-- Akhil Pratap Singh, Kosuke Mitarai, Yasunari Suzuki, Kentaro Heya, Yutaka Tabuchi, Keisuke Fujii, Yasunobu Nakamura, [Experimental demonstration of a high-fidelity virtual two-qubit gate](https://arxiv.org/abs/arXiv:2307.03232), arXiv:2307.03232 (2023)
 - Leonardo Placidi, Ryuichiro Hataya, Toshio Mori, Koki Aoyama, Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, [MNISQ: A Large-Scale Quantum Circuit Dataset for Machine Learning on/for Quantum Computers in the NISQ era](https://arxiv.org/abs/arXiv:2306.16627), arXiv:2306.16627 (2023)
 - Yuichiro Nakano, Hideaki Hakoshima, Kosuke Mitarai, Keisuke Fujii, [QAOA-MC: Markov chain Monte Carlo enhanced by Quantum Alternating Operator Ansatz](https://arxiv.org/abs/arXiv:2305.08789), arXiv:2305.08789 (2023)
 - Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-Selected Configuration Interaction: classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://arxiv.org/abs/arXiv:2302.11320), arXiv:2302.11320 (2023)
