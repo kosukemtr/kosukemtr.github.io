@@ -51,8 +51,30 @@ permalink: /members/
   </div>
 </div>
 
+<div class="member-container">
+  <div class="member-portrait">
+    <!-- Replace the image source with the actual path to the new member's portrait -->
+    <img src="{{ site.baseurl }}/assets/images/ChuseiKiumi.jpg" class="member-portrait">
+  </div>
+  <div class="member-info">
+    <div class="member-name">黄海仲星 Chusei KIUMI</div>
+    <div class="member-position">特任助教</div>
+    <!-- Optionally, add links to Google Scholar, researchmap, Twitter, or any other profiles -->
+    <div class="member-link">/<a href="https://researchmap.jp/kiumi">researchmap</a>
+  </div>
+</div>
+
 ## Students
 
-| Name            | Role           |
-|-----------------|----------------|
-| | |
+| Name            | Role | URL                                        |
+|-----------------|------|--------------------------------------------|
+| Yu Huan         | D1   |                                            |
+| 高木 裕登       | D1   |                                            |
+| 中山 昌勲       | D1   | [researchmap](https://researchmap.jp/qml_penguin) |
+| 木村 亮介       | M1   |                                            |
+| 伴 昂一郎       | M1   |                                            |
+| 橋本 耀介       | B4   |                                            |
+| 阿部 大夢       | B4   |                                            |
+| 請園 力志       | B4   |                                            |
+
+
