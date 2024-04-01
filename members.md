@@ -60,7 +60,7 @@ permalink: /members/
     <div class="member-name">黄海仲星 Chusei KIUMI</div>
     <div class="member-position">特任助教</div>
     <!-- Optionally, add links to Google Scholar, researchmap, Twitter, or any other profiles -->
-    <div class="member-link">/<a href="https://researchmap.jp/kiumi">researchmap</a></div>
+    <div class="member-link"><a href="https://researchmap.jp/kiumi">researchmap</a></div>
   </div>
 </div>
 
