@@ -5,7 +5,7 @@ title: Publications
 
 ## Peer-reviewed
 
-- Tsubasa Ichikawa, Hideaki Hakoshima, Koji Inui, Kosuke Ito, Ryo Matsuda, Kosuke Mitarai, Koichi Miyamoto, Wataru Mizukami, Kaoru Mizuta, Toshio Mori, Yuichiro Nakano, Akimoto Nakayama, Ken N. Okada, Takanori Sugimoto, Souichi Takahira, Nayuta Takemori, Satoyuki Tsukano, Hiroshi Ueda, Ryo Watanabe, Yuichiro Yoshida, Keisuke Fujii, [Current numbers of qubits and their uses](https://doi.org/10.1038/s42254-024-00725-0), Nature Reviews Physics **null**, null (2024)
+- Tsubasa Ichikawa, Hideaki Hakoshima, Koji Inui, Kosuke Ito, Ryo Matsuda, Kosuke Mitarai, Koichi Miyamoto, Wataru Mizukami, Kaoru Mizuta, Toshio Mori, Yuichiro Nakano, Akimoto Nakayama, Ken N. Okada, Takanori Sugimoto, Souichi Takahira, Nayuta Takemori, Satoyuki Tsukano, Hiroshi Ueda, Ryo Watanabe, Yuichiro Yoshida, Keisuke Fujii, [Current numbers of qubits and their uses](https://doi.org/10.1038/s42254-024-00725-0), Nature Reviews Physics **6**, 345 (2024)
 - Kohei Morimoto, Yusuke Takase, Kosuke Mitarai, Keisuke Fujii, [Continuous optimization by quantum adaptive distribution search](https://doi.org/10.1103/physrevresearch.6.023191), Physical Review Research **6**, 023191 (2024)
 - Yuki Sano, Kosuke Mitarai, Naoki Yamamoto, Naoki Ishikawa, [Accelerating Grover Adaptive Search: Qubit and Gate Count Reduction Strategies With Higher Order Formulations](https://doi.org/10.1109/tqe.2024.3393437), IEEE Transactions on Quantum Engineering **5**, 3101712 (2024)
 - Akhil Pratap Singh, Kosuke Mitarai, Yasunari Suzuki, Kentaro Heya, Yutaka Tabuchi, Keisuke Fujii, Yasunobu Nakamura, [Experimental demonstration of a high-fidelity virtual two-qubit gate](https://doi.org/10.1103/physrevresearch.6.013235), Physical Review Research **6**, 013235 (2024)
