@@ -5,6 +5,7 @@ title: Publications
 
 ## Peer-reviewed
 
+- Yuichiro Nakano, Hideaki Hakoshima, Kosuke Mitarai, Keisuke Fujii, [Markov-chain Monte Carlo method enhanced by a quantum alternating operator ansatz](https://doi.org/10.1103/physrevresearch.6.033105), Physical Review Research **6**, 033105 (2024)
 - Tsubasa Ichikawa, Hideaki Hakoshima, Koji Inui, Kosuke Ito, Ryo Matsuda, Kosuke Mitarai, Koichi Miyamoto, Wataru Mizukami, Kaoru Mizuta, Toshio Mori, Yuichiro Nakano, Akimoto Nakayama, Ken N. Okada, Takanori Sugimoto, Souichi Takahira, Nayuta Takemori, Satoyuki Tsukano, Hiroshi Ueda, Ryo Watanabe, Yuichiro Yoshida, Keisuke Fujii, [Current numbers of qubits and their uses](https://doi.org/10.1038/s42254-024-00725-0), Nature Reviews Physics **6**, 345 (2024)
 - Kohei Morimoto, Yusuke Takase, Kosuke Mitarai, Keisuke Fujii, [Continuous optimization by quantum adaptive distribution search](https://doi.org/10.1103/physrevresearch.6.023191), Physical Review Research **6**, 023191 (2024)
 - Yuki Sano, Kosuke Mitarai, Naoki Yamamoto, Naoki Ishikawa, [Accelerating Grover Adaptive Search: Qubit and Gate Count Reduction Strategies With Higher Order Formulations](https://doi.org/10.1109/tqe.2024.3393437), IEEE Transactions on Quantum Engineering **5**, 3101712 (2024)
@@ -48,13 +49,13 @@ title: Publications
 
 ## arXiv preprints
 
+- Don Arai, Ken N. Okada, Yuichiro Nakano, Kosuke Mitarai, Keisuke Fujii, [Scalable circuit depth reduction in feedback-based quantum optimization with a quadratic approximation](https://arxiv.org/abs/arXiv:2407.17810), arXiv:2407.17810 (2024)
 - Kazuki Sakamoto, Hayata Morisaki, Junichi Haruna, Etsuko Itou, Keisuke Fujii, Kosuke Mitarai, [End-to-end complexity for simulating the Schwinger model on quantum computers](https://arxiv.org/abs/arXiv:2311.17388), arXiv:2311.17388 (2023)
 - Yusei Mori, Hideaki Hakoshima, Kyohei Sudo, Toshio Mori, Kosuke Mitarai, Keisuke Fujii, [Quantum Circuit Unoptimization](https://arxiv.org/abs/arXiv:2311.03805), arXiv:2311.03805 (2023)
 - Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, Yuya O. Nakagawa, [Classical variational optimization of PREPARE circuit for quantum phase estimation of quantum chemistry Hamiltonians](https://arxiv.org/abs/arXiv:2308.13770), arXiv:2308.13770 (2023)
 - Adam Siegel, Kosuke Mitarai, Keisuke Fujii, [Algorithmic error mitigation for quantum eigenvalues estimation](https://arxiv.org/abs/arXiv:2308.03879), arXiv:2308.03879 (2023)
 - Tsubasa Ichikawa, Hideaki Hakoshima, Koji Inui, Kosuke Ito, Ryo Matsuda, Kosuke Mitarai, Koichi Miyamoto, Wataru Mizukami, Kaoru Mizuta, Toshio Mori, Yuichiro Nakano, Akimoto Nakayama, Ken N. Okada, Takanori Sugimoto, Souichi Takahira, Nayuta Takemori, Satoyuki Tsukano, Hiroshi Ueda, Ryo Watanabe, Yuichiro Yoshida, Keisuke Fujii, [A comprehensive survey on quantum computer usage: How many qubits are employed for what purposes?](https://arxiv.org/abs/arXiv:2307.16130), arXiv:2307.16130 (2023)
 - Leonardo Placidi, Ryuichiro Hataya, Toshio Mori, Koki Aoyama, Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, [MNISQ: A Large-Scale Quantum Circuit Dataset for Machine Learning on/for Quantum Computers in the NISQ era](https://arxiv.org/abs/arXiv:2306.16627), arXiv:2306.16627 (2023)
-- Yuichiro Nakano, Hideaki Hakoshima, Kosuke Mitarai, Keisuke Fujii, [QAOA-MC: Markov chain Monte Carlo enhanced by Quantum Alternating Operator Ansatz](https://arxiv.org/abs/arXiv:2305.08789), arXiv:2305.08789 (2023)
 - Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-Selected Configuration Interaction: classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://arxiv.org/abs/arXiv:2302.11320), arXiv:2302.11320 (2023)
 - Akimoto Nakayama, Kosuke Mitarai, Leonardo Placidi, Takanori Sugimoto, Keisuke Fujii, [VQE-generated Quantum Circuit Dataset for Machine Learning](https://arxiv.org/abs/arXiv:2302.09751), arXiv:2302.09751 (2023)
 - Iori Takeda, Souichi Takahira, Kosuke Mitarai, Keisuke Fujii, [Quantum-inspired algorithm applied to extreme learning](https://arxiv.org/abs/arXiv:2209.12452), arXiv:2209.12452 (2022)
