@@ -5,6 +5,7 @@ title: Publications
 
 ## Peer-reviewed
 
+- Norihito Shirai, Kenji Kubo, Kosuke Mitarai, Keisuke Fujii, [Quantum tangent kernel](https://doi.org/10.1103/physrevresearch.6.033179), Physical Review Research **6**, 033179 (2024)
 - Yuichiro Nakano, Hideaki Hakoshima, Kosuke Mitarai, Keisuke Fujii, [Markov-chain Monte Carlo method enhanced by a quantum alternating operator ansatz](https://doi.org/10.1103/physrevresearch.6.033105), Physical Review Research **6**, 033105 (2024)
 - Tsubasa Ichikawa, Hideaki Hakoshima, Koji Inui, Kosuke Ito, Ryo Matsuda, Kosuke Mitarai, Koichi Miyamoto, Wataru Mizukami, Kaoru Mizuta, Toshio Mori, Yuichiro Nakano, Akimoto Nakayama, Ken N. Okada, Takanori Sugimoto, Souichi Takahira, Nayuta Takemori, Satoyuki Tsukano, Hiroshi Ueda, Ryo Watanabe, Yuichiro Yoshida, Keisuke Fujii, [Current numbers of qubits and their uses](https://doi.org/10.1038/s42254-024-00725-0), Nature Reviews Physics **6**, 345 (2024)
 - Kohei Morimoto, Yusuke Takase, Kosuke Mitarai, Keisuke Fujii, [Continuous optimization by quantum adaptive distribution search](https://doi.org/10.1103/physrevresearch.6.023191), Physical Review Research **6**, 023191 (2024)
@@ -49,6 +50,7 @@ title: Publications
 
 ## arXiv preprints
 
+- Akimoto Nakayama, Hayata Morisaki, Kosuke Mitarai, Hiroshi Ueda, Keisuke Fujii, [Explicit quantum surrogates for quantum kernel models](https://arxiv.org/abs/arXiv:2408.03000), arXiv:2408.03000 (2024)
 - Don Arai, Ken N. Okada, Yuichiro Nakano, Kosuke Mitarai, Keisuke Fujii, [Scalable circuit depth reduction in feedback-based quantum optimization with a quadratic approximation](https://arxiv.org/abs/arXiv:2407.17810), arXiv:2407.17810 (2024)
 - Kazuki Sakamoto, Hayata Morisaki, Junichi Haruna, Etsuko Itou, Keisuke Fujii, Kosuke Mitarai, [End-to-end complexity for simulating the Schwinger model on quantum computers](https://arxiv.org/abs/arXiv:2311.17388), arXiv:2311.17388 (2023)
 - Yusei Mori, Hideaki Hakoshima, Kyohei Sudo, Toshio Mori, Kosuke Mitarai, Keisuke Fujii, [Quantum Circuit Unoptimization](https://arxiv.org/abs/arXiv:2311.03805), arXiv:2311.03805 (2023)
@@ -59,7 +61,6 @@ title: Publications
 - Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-Selected Configuration Interaction: classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://arxiv.org/abs/arXiv:2302.11320), arXiv:2302.11320 (2023)
 - Akimoto Nakayama, Kosuke Mitarai, Leonardo Placidi, Takanori Sugimoto, Keisuke Fujii, [VQE-generated Quantum Circuit Dataset for Machine Learning](https://arxiv.org/abs/arXiv:2302.09751), arXiv:2302.09751 (2023)
 - Iori Takeda, Souichi Takahira, Kosuke Mitarai, Keisuke Fujii, [Quantum-inspired algorithm applied to extreme learning](https://arxiv.org/abs/arXiv:2209.12452), arXiv:2209.12452 (2022)
-- Norihito Shirai, Kenji Kubo, Kosuke Mitarai, Keisuke Fujii, [Quantum tangent kernel](https://arxiv.org/abs/arXiv:2111.02951), arXiv:2111.02951 (2021)
 - Naixu Guo, Kosuke Mitarai, Keisuke Fujii, [Nonlinear transformation of complex amplitudes via quantum singular value transformation](https://arxiv.org/abs/arXiv:2107.10764), arXiv:2107.10764 (2021)
 - Makoto Negoro, Kosuke Mitarai, Keisuke Fujii, Kohei Nakajima, Masahiro Kitagawa, [Machine learning with controllable quantum dynamics of a nuclear spin ensemble in a solid](https://arxiv.org/abs/arXiv:1806.10910), arXiv:1806.10910 (2018)
 
