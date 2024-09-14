@@ -50,6 +50,7 @@ title: Publications
 
 ## arXiv preprints
 
+- Hitomi Mori, Kosuke Mitarai, Keisuke Fujii, [Efficient state preparation for multivariate Monte Carlo simulation](https://arxiv.org/abs/arXiv:2409.07336), arXiv:2409.07336 (2024)
 - Akimoto Nakayama, Hayata Morisaki, Kosuke Mitarai, Hiroshi Ueda, Keisuke Fujii, [Explicit quantum surrogates for quantum kernel models](https://arxiv.org/abs/arXiv:2408.03000), arXiv:2408.03000 (2024)
 - Don Arai, Ken N. Okada, Yuichiro Nakano, Kosuke Mitarai, Keisuke Fujii, [Scalable circuit depth reduction in feedback-based quantum optimization with a quadratic approximation](https://arxiv.org/abs/arXiv:2407.17810), arXiv:2407.17810 (2024)
 - Kazuki Sakamoto, Hayata Morisaki, Junichi Haruna, Etsuko Itou, Keisuke Fujii, Kosuke Mitarai, [End-to-end complexity for simulating the Schwinger model on quantum computers](https://arxiv.org/abs/arXiv:2311.17388), arXiv:2311.17388 (2023)
