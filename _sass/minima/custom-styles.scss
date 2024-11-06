@@ -3,21 +3,26 @@
 
 .homepage-banner {
   width: 100vw;
-  position: relative; // 相対位置を指定
+  position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
   margin-bottom: 1em;
   overflow: hidden;
+  z-index: 1; // Set a lower z-index for the banner
   img {
     width: 100%;
     height: auto;
   }
 }
 
+.navbar {
+  z-index: 10; // Ensure the navbar has a higher z-index
+}
+
 html, body {
-  overflow-x: hidden; // ビューポートの横幅を超えるコンテンツがあっても横スクロールを発生させない
+  overflow-x: hidden;
 }
 
 .post-content img {
