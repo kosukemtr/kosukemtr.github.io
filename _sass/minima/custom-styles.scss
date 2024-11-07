@@ -25,7 +25,7 @@
 .trigger {
   z-index: 10; // Ensures the dropdown is above the banner
   position: relative;
-  background-color: white; // Set a white, non-transparent background
+  background-color: $background-color; // Set a white, non-transparent background
   padding: 1em; // Optional: adds padding around the links for better spacing
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional: adds a subtle shadow for depth
 }
