@@ -27,7 +27,7 @@
   position: relative;
   background-color: $background-color; // Set a white, non-transparent background
   padding: 1em; // Optional: adds padding around the links for better spacing
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional: adds a subtle shadow for depth
+  box-shadow: none;
 }
 
 
