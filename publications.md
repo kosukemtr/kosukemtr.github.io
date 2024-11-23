@@ -5,6 +5,7 @@ title: Publications
 
 ## Peer-reviewed
 
+- Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, Yuya O. Nakagawa, [Classical variational optimization of a PREPARE circuit for quantum phase estimation of quantum chemistry Hamiltonians](https://doi.org/10.1103/physrevresearch.6.043186), Physical Review Research **6**, 043186 (2024)
 - Kazuki Sakamoto, Hayata Morisaki, Junichi Haruna, Etsuko Itou, Keisuke Fujii, Kosuke Mitarai, [End-to-end complexity for simulating the Schwinger model on quantum computers](https://doi.org/10.22331/q-2024-09-17-1474), Quantum **8**, 1474 (2024)
 - Norihito Shirai, Kenji Kubo, Kosuke Mitarai, Keisuke Fujii, [Quantum tangent kernel](https://doi.org/10.1103/physrevresearch.6.033179), Physical Review Research **6**, 033179 (2024)
 - Yuichiro Nakano, Hideaki Hakoshima, Kosuke Mitarai, Keisuke Fujii, [Markov-chain Monte Carlo method enhanced by a quantum alternating operator ansatz](https://doi.org/10.1103/physrevresearch.6.033105), Physical Review Research **6**, 033105 (2024)
@@ -55,7 +56,6 @@ title: Publications
 - Akimoto Nakayama, Hayata Morisaki, Kosuke Mitarai, Hiroshi Ueda, Keisuke Fujii, [Explicit quantum surrogates for quantum kernel models](https://arxiv.org/abs/arXiv:2408.03000), arXiv:2408.03000 (2024)
 - Don Arai, Ken N. Okada, Yuichiro Nakano, Kosuke Mitarai, Keisuke Fujii, [Scalable circuit depth reduction in feedback-based quantum optimization with a quadratic approximation](https://arxiv.org/abs/arXiv:2407.17810), arXiv:2407.17810 (2024)
 - Yusei Mori, Hideaki Hakoshima, Kyohei Sudo, Toshio Mori, Kosuke Mitarai, Keisuke Fujii, [Quantum Circuit Unoptimization](https://arxiv.org/abs/arXiv:2311.03805), arXiv:2311.03805 (2023)
-- Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, Yuya O. Nakagawa, [Classical variational optimization of PREPARE circuit for quantum phase estimation of quantum chemistry Hamiltonians](https://arxiv.org/abs/arXiv:2308.13770), arXiv:2308.13770 (2023)
 - Adam Siegel, Kosuke Mitarai, Keisuke Fujii, [Algorithmic error mitigation for quantum eigenvalues estimation](https://arxiv.org/abs/arXiv:2308.03879), arXiv:2308.03879 (2023)
 - Tsubasa Ichikawa, Hideaki Hakoshima, Koji Inui, Kosuke Ito, Ryo Matsuda, Kosuke Mitarai, Koichi Miyamoto, Wataru Mizukami, Kaoru Mizuta, Toshio Mori, Yuichiro Nakano, Akimoto Nakayama, Ken N. Okada, Takanori Sugimoto, Souichi Takahira, Nayuta Takemori, Satoyuki Tsukano, Hiroshi Ueda, Ryo Watanabe, Yuichiro Yoshida, Keisuke Fujii, [A comprehensive survey on quantum computer usage: How many qubits are employed for what purposes?](https://arxiv.org/abs/arXiv:2307.16130), arXiv:2307.16130 (2023)
 - Leonardo Placidi, Ryuichiro Hataya, Toshio Mori, Koki Aoyama, Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, [MNISQ: A Large-Scale Quantum Circuit Dataset for Machine Learning on/for Quantum Computers in the NISQ era](https://arxiv.org/abs/arXiv:2306.16627), arXiv:2306.16627 (2023)
