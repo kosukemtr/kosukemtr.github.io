@@ -5,6 +5,8 @@ title: Publications
 
 ## Peer-reviewed
 
+- Yoshiaki Kawase, Kosuke Mitarai, Keisuke Fujii, [Quantum kernel t-distributed stochastic neighbor embedding](https://doi.org/10.1103/physrevresearch.6.043234), Physical Review Research **6**, 043234 (2024)
+- Naixu Guo, Kosuke Mitarai, Keisuke Fujii, [Nonlinear transformation of complex amplitudes via quantum singular value transformation](https://doi.org/10.1103/physrevresearch.6.043227), Physical Review Research **6**, 043227 (2024)
 - Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, Yuya O. Nakagawa, [Classical variational optimization of a PREPARE circuit for quantum phase estimation of quantum chemistry Hamiltonians](https://doi.org/10.1103/physrevresearch.6.043186), Physical Review Research **6**, 043186 (2024)
 - Kazuki Sakamoto, Hayata Morisaki, Junichi Haruna, Etsuko Itou, Keisuke Fujii, Kosuke Mitarai, [End-to-end complexity for simulating the Schwinger model on quantum computers](https://doi.org/10.22331/q-2024-09-17-1474), Quantum **8**, 1474 (2024)
 - Norihito Shirai, Kenji Kubo, Kosuke Mitarai, Keisuke Fujii, [Quantum tangent kernel](https://doi.org/10.1103/physrevresearch.6.033179), Physical Review Research **6**, 033179 (2024)
@@ -62,7 +64,6 @@ title: Publications
 - Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-Selected Configuration Interaction: classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://arxiv.org/abs/arXiv:2302.11320), arXiv:2302.11320 (2023)
 - Akimoto Nakayama, Kosuke Mitarai, Leonardo Placidi, Takanori Sugimoto, Keisuke Fujii, [VQE-generated Quantum Circuit Dataset for Machine Learning](https://arxiv.org/abs/arXiv:2302.09751), arXiv:2302.09751 (2023)
 - Iori Takeda, Souichi Takahira, Kosuke Mitarai, Keisuke Fujii, [Quantum-inspired algorithm applied to extreme learning](https://arxiv.org/abs/arXiv:2209.12452), arXiv:2209.12452 (2022)
-- Naixu Guo, Kosuke Mitarai, Keisuke Fujii, [Nonlinear transformation of complex amplitudes via quantum singular value transformation](https://arxiv.org/abs/arXiv:2107.10764), arXiv:2107.10764 (2021)
 - Makoto Negoro, Kosuke Mitarai, Keisuke Fujii, Kohei Nakajima, Masahiro Kitagawa, [Machine learning with controllable quantum dynamics of a nuclear spin ensemble in a solid](https://arxiv.org/abs/arXiv:1806.10910), arXiv:1806.10910 (2018)
 
 ## 解説/総説
