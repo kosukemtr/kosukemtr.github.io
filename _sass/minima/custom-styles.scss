@@ -41,6 +41,7 @@ html, body {
   margin-right: auto;
 }
 
-.home h3 {
-  @include relative-font-size(1); 
+.post-link {
+  display: block;
+  @include relative-font-size(1);
 }
