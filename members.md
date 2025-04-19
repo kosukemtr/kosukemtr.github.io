@@ -58,23 +58,34 @@ permalink: /members/
   </div>
   <div class="member-info">
     <div class="member-name">黄海仲星 Chusei KIUMI</div>
-    <div class="member-position">特任助教</div>
+    <div class="member-position">特任助教 / QIQB 所属</div>
     <!-- Optionally, add links to Google Scholar, researchmap, Twitter, or any other profiles -->
     <div class="member-link"><a href="https://researchmap.jp/kiumi">researchmap</a></div>
   </div>
 </div>
 
-## Students
+## Current members
 
 | Name            | Role | URL                                        |
 |-----------------|------|--------------------------------------------|
-| Yu Huan         | D1   |                                            |
-| 高木 裕登       | D1   |                                            |
-| 中山 昌勲       | D1   | [researchmap](https://researchmap.jp/qml_penguin) |
-| 木村 亮介       | M1   |                                            |
-| 伴 昂一郎       | M1   |                                            |
-| 橋本 耀介       | B4   |                                            |
-| 阿部 大夢       | B4   |                                            |
-| 請園 力志       | B4   |                                            |
+| 山岡 悠          | 特任研究員 / QIQB 所属 |  |
+| 作花 健也        | 特任研究員 / QIQB 所属 |  |
+| Yu Huan         | D2   |                                            |
+| 高木 裕登       | D2   |                                            |
+| 中山 昌勲       | D2   | [researchmap](https://researchmap.jp/qml_penguin) |
+| 鴨下 正彦       | D2   |  |
+| 木村 亮介       | M2   |                                            |
+| 伴 昂一郎       | M2   |                                            |
+| 阿部 大夢       | M1   |                                            |
+| 請園 力志       | M1   |                                            |
+| 坂本 大祐       | B4   |                                            |
+| 服部 晃汰       | B4   |                                            |
+
+
+## Past members
+
+| Name            | Year | Affliation afterwards                                |
+|-----------------|------|--------------------------------------------|
+| 橋本 耀介       | 2025年3月卒業  |  QIQB量子コンピュータ実機グループ              |
 
 
