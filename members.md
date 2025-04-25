@@ -73,7 +73,7 @@ permalink: /members/
 | Yu Huan         | D2   |                                            |
 | 高木 裕登       | D2   |                                            |
 | 中山 昌勲       | D2   | [researchmap](https://researchmap.jp/qml_penguin) |
-| 鴨下 正彦       | D2   |  |
+| 鴨下 正彦       | D1   |  |
 | 木村 亮介       | M2   |                                            |
 | 伴 昂一郎       | M2   |                                            |
 | 阿部 大夢       | M1   |                                            |
