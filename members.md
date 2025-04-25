@@ -68,7 +68,7 @@ permalink: /members/
 
 | Name            | Role | URL                                        |
 |-----------------|------|--------------------------------------------|
-| 山岡 悠          | 特任研究員 / QIQB 所属 |  |
+| 山岡 悠          | 特任研究員 / QIQB 所属 |  [researchmap](https://researchmap.jp/yu-yamaoka)/[個人HP](https://sites.google.com/view/yu-yamaoka)|
 | 作花 健也        | 特任研究員 / QIQB 所属 |  |
 | Yu Huan         | D2   |                                            |
 | 高木 裕登       | D2   |                                            |
