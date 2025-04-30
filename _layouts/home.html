@@ -1,0 +1,17 @@
+{% raw %}
+---
+layout: base
+---
+
+<!-- ▼ ここにフル幅バナー -->
+<div class="homepage-banner">
+  <img src="{{ '/assets/images/banner.png' | relative_url }}" alt="Banner">
+</div>
+
+<!-- ▼ ここから従来の wrapper ＋ index.md 本文 -->
+<div class="page-content">
+  <div class="wrapper">
+    {{ content }}
+  </div>
+</div>
+{% endraw %}

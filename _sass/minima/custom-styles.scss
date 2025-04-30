@@ -1,20 +1,28 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
-.homepage-banner {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  margin-bottom: 1em;
-  overflow: hidden;
-  z-index: 1; // Lower z-index for the banner
-  img {
-    width: 100%;
-    height: auto;
-  }
+// .homepage-banner {
+//   width: 100vw;
+//   position: relative;
+//   left: 50%;
+//   right: 50%;
+//   margin-left: -50vw;
+//   margin-right: -50vw;
+//   margin-bottom: 1em;
+//   overflow: hidden;
+//   z-index: 1; // Lower z-index for the banner
+//   img {
+//     width: 100%;
+//     height: auto;
+//   }
+// }
+
+/* _sass/minima/custom-styles.scss */
+.homepage-banner img {
+  width: 100vw;     /* ビューポート全幅 */
+  height: auto;
+  display: block;
+  margin: 0;        /* 余白を殺す */
 }
 
 .nav-trigger {
