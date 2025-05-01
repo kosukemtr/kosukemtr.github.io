@@ -12,7 +12,7 @@ description: >
 
 # Build settings
 
-remote_theme: "jekyll/minima"
+remote_theme: "jekyll/minima@8106bd4" # Use the minima theme as of 2025-05-01
 
 # plugins:
 #   - jekyll-feed
