@@ -14,6 +14,10 @@ description: >
 
 remote_theme: "jekyll/minima@8106bd4" # Use the minima theme as of 2025-05-01
 
+markdown: kramdown          # もともとデフォルト
+kramdown:
+  math_engine: mathjax      # “$$ … $$” や “$ … $” を数式として扱う
+
 # plugins:
 #   - jekyll-feed
 #   - jekyll-seo-tag
