@@ -26,7 +26,7 @@ Google Colab と quri-parts で学ぶ量子コンピュータ入門
 <img src="{{ site.baseurl }}/assets/images/quantumapps.png" alt="quantumapps" style="width: 80%; height: auto;">
 
 
-## 3 | 古典ビットと量子ビット
+## 古典ビットと量子ビット
 
 量子コンピュータは、古典的なコンピュータとは異なり、「量子ビット（qubit）」と呼ばれる情報の単位を使って計算を行います。これは、従来のコンピュータが扱う「古典ビット」とは本質的に異なる性質を持っており、量子コンピュータの動作原理を理解する上で非常に重要なポイントとなります。
 
