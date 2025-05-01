@@ -37,14 +37,28 @@
   //   overflow-x: hidden;
   // }
   
-  .post-content img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .post-link {
-    display: block;
-    @include relative-font-size(1);
-  }
-  
+.post-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1);
+}
+
+.post-title, .post-content h1 {
+  margin-bottom: 10px;
+  // font-size: 2.625rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1.15;
+}
+
+.post-header {
+  margin-bottom: 30px;
+  padding-bottom: 18px;
+  text-align: left;
+  border-bottom: 1px solid #e7e7e7;
+}
