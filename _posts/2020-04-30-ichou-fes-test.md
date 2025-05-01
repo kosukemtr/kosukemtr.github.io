@@ -72,6 +72,7 @@ Google Colab と quri-parts で学ぶ量子コンピュータ入門
 
 <img src="{{ site.baseurl }}/assets/images/qubit_path_interference_branch2.svg.svg" alt="qubit-double-slit" style="width: 80%; height: auto;">
 
+**単一量子ビットのラムゼイ干渉回路。** 太実線は量子ビットの振幅が辿る“経路”を示し，点線は初期状態 $$|1\rangle$$ に対応する空経路を表しています。最初の $$R_y(\pi/2)$$ ゲートで $$|0\rangle$$ と $$|1\rangle$$ の重ね合わせを作り，中央の $$R_z(\phi)$$ ゲートで二つの経路に位相差 $$\phi$$ を付与，最後の $$R_y^{\dagger}$$ ゲートで両経路を再結合します。経路間の位相差が干渉を引き起こし，測定確率は $$P(0)=\cos^{2}\tfrac{\phi}{2}$$ と $$P(1)=\sin^{2}\tfrac{\phi}{2}$$ に振動します。古典的にどちらか一方の経路しか通らない粒子であれば干渉は生じず，確率は常に $$\tfrac12$$ に固定されます。
 
 ## 干渉を体験するミニ実験：1量子ビットの量子回路を作ってみる
 
