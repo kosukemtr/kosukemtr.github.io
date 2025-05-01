@@ -1,5 +1,5 @@
 ---
 ---
 
-@import "minima";          // まずテーマを読み込む
+@import "minima/initialize";          // minima の初期化スタイルを読み込む
 @import "minima/custom-styles"; // 上書きや追加
