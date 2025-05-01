@@ -198,7 +198,7 @@ jobs:
   
               # Create the post content
               echo "---" > "_posts/$filename"
-              echo "title: New publication \"$title\"" >> "_posts/$filename"
+              echo "title: \"New publication: $title\"" >> "_posts/$filename"
               echo "---" >> "_posts/$filename"
               echo "" >> "_posts/$filename"
               echo "A new paper \"$title\" is now published [here]($url)." >> "_posts/$filename"
