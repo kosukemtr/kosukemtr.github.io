@@ -1,14 +1,15 @@
+---
+
+---
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
 .homepage-banner {
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  margin-bottom: 1em;
-  overflow: hidden;
-  
+  margin-bottom: 1em;  
   img {
     width: 100%;
     height: auto;
