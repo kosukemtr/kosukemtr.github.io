@@ -19,18 +19,18 @@
   //   max-width: 100%;
   // }
   
-  .nav-trigger {
-    z-index: 5;
-    position: relative; // Ensure the trigger is layered correctly
-  }
+  // .nav-trigger {
+  //   z-index: 5;
+  //   position: relative; // Ensure the trigger is layered correctly
+  // }
   
-  .trigger {
-    z-index: 10; // Ensures the dropdown is above the banner
-    position: relative;
-    background-color: $background-color; // Set a white, non-transparent background
-    padding: 1em; // Optional: adds padding around the links for better spacing
-    box-shadow: none;
-  }
+  // .trigger {
+  //   z-index: 10; // Ensures the dropdown is above the banner
+  //   position: relative;
+  //   background-color: $background-color; // Set a white, non-transparent background
+  //   padding: 1em; // Optional: adds padding around the links for better spacing
+  //   box-shadow: none;
+  // }
   
   
   html, body {
