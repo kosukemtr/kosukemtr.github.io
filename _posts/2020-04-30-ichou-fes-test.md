@@ -23,7 +23,7 @@ Google Colab と quri-parts で学ぶ量子コンピュータ入門
 
 これらの理由により、量子計算は将来にわたって大きな社会的インパクトを持つ技術として期待されています。
 
-![quantumapps-illustration]({{ site.baseurl }}/assets/images/quantumapps.png)
+<img src="{{ site.baseurl }}/assets/images/quantumapps.png" alt="quantumapps" style="width: 80%; height: auto;">
 
 
 ## 3 | 古典ビットと量子ビット
