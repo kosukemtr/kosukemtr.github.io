@@ -10,7 +10,7 @@ Google Colab と quri-parts で学ぶ量子コンピュータ入門
 
 
 ## この記事のねらい
-このページは 2025 年度のいちょう祭のために特設したオンライン企画です。**自学自習で量子回路を設計・，シミュレータを動かし・必要ならクラウド実機にも送れる** 状態になることを目標にします。Python の基本文法と高校 2 年生程度の数学を理解している読者を想定し，量子ビットの直感的なイメージを基づいて解説します。
+このページは 2025 年度のいちょう祭のために特設したオンライン企画です。**自学自習で量子回路を設計・，シミュレータを動かし・必要ならクラウド実機にも送れる** 状態になることを目標にします。高校 2 年生程度の物理や数学を理解しており、Python の基本文法を知っている読者を想定し，量子ビットの直感的なイメージを基づいて解説します。
 
 ## 量子コンピュータに期待されること
 
@@ -73,7 +73,80 @@ Google Colab と quri-parts で学ぶ量子コンピュータ入門
 <img src="{{ site.baseurl }}/assets/images/qubit_path_interference_branch2.svg.svg" alt="qubit-double-slit" style="width: 80%; height: auto;">
 
 
-## 干渉を体験するミニ実験
+## 干渉を体験するミニ実験：1量子ビットの量子回路を作ってみる
 
-以下の手順を Google Colab で実行し，量子と古典の差を観察してみましょう。
+量子ビットの干渉を、実際に Python ライブラリ [Cirq](https://quantumai.google/cirq) を使って体験してみましょう。古典コンピュータでも量子回路をシミュレートすることは可能で、量子ビットが 20 個程度までであれば、[Google Colab](https://colab.research.google.com/) のような環境でも問題なく実行できます。ここでは 1 量子ビットに対して「干渉縞」がどのように生じるかを観察する簡単な実験を行います。
 
+### Cirq とは？
+
+[Cirq](https://quantumai.google/cirq) は Google が開発している量子計算のための Python ライブラリで、量子ビットや量子ゲート、回路、シミュレーションなどを簡単に扱えます。
+
+### Google Colab とは
+[Google Colab](https://colab.research.google.com/) は、Google が提供する Jupyter Notebook のクラウドサービスです。Google アカウントさえあれば、Python のコードをブラウザ上で実行できるため、特別な環境を用意しなくても手軽に量子計算の実験ができます。Colab では GPU や TPU を使った計算も可能で、量子コンピュータのシミュレーションにも適しています。使ったことがない人は、[こちら](https://colab.research.google.com/notebooks/welcome.ipynb) を参考にしてみてください。
+
+
+### やってみよう：1量子ビットの干渉回路
+
+以下の手順で干渉の様子を観察します。
+
+1. まず $$R_y(\pi/2)$$ で量子ビットを「0」と「1」の重ね合わせ状態にします。
+2. 次に $$R_z(\theta)$$ で各状態に位相差をつけます。
+3. 最後に $$R_y(-\pi/2)$$ でそれぞれの状態を干渉させます。 
+4. その状態を「観測」すると「0」になる確率が $$\theta$$ によって振動します。
+
+
+### 実行コード
+
+Cirq のインストールには以下のコマンドを実行します。
+```python
+# Cirq のインストール（初回のみ必要）
+!pip install -q cirq
+```
+
+次に、以下のコードを実行してみましょう。
+```python
+import cirq
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 量子ビットを1つ定義
+q = cirq.NamedQubit("q0")
+sim = cirq.Simulator()
+
+# theta の値を 0 から 2π までスキャン
+theta_vals = np.linspace(0, 2 * np.pi, 200)
+prob_0 = []
+
+for theta in theta_vals:
+    # 干渉回路の構築
+    circuit = cirq.Circuit(
+        cirq.ry(np.pi / 2)(q),      # 初期重ね合わせ
+        cirq.rz(theta)(q),          # 位相付与（干渉の原因）
+        cirq.ry(-np.pi / 2)(q),     # 再合流
+        cirq.measure(q, key="m")    # 測定
+    )
+    # シミュレーション（ショット数 = 1000）
+    result = sim.run(circuit, repetitions=1000)
+    counts = result.histogram(key="m")
+    prob_0.append(counts.get(0, 0) / 1000)
+
+# 結果の可視化
+plt.figure(figsize=(8, 4))
+plt.plot(theta_vals, prob_0)
+plt.xlabel(r"$\theta$")
+plt.ylabel("P(0)")
+plt.show()
+```
+
+量子ビットの測定結果は確率的であり、1回だけ測ってもその確率を知ることはできません。そこで、同じ量子回路を何度も実行（サンプリング）し、その結果の統計をとることで、ある出力が現れる確率を推定します。たとえば、ある量子状態に対して1000回測定を行い、そのうち「0」が800回、「1」が200回観測されたとすれば、「0」が出る確率はおおよそ0.8（80%）と見積もることができます。
+
+Cirqでは、このような測定結果を `sim.run(..., repetitions=1000)` によって得ることができ、その結果は辞書のような形で `result.histogram(key="m")` に格納されます。これは、"m" という名前の測定結果に対して、各出力値（たとえば0や1）が何回出たかを記録したヒストグラム（度数分布表）です。
+
+このヒストグラムから「0」が何回出たかを取り出すには、`counts.get(0, 0)` と書きます。ここで `counts` は `result.histogram(...)` で得られる辞書オブジェクトです。`get(0, 0)` は「キー0（つまり出力が0のとき）の値（回数）を取り出す。もしキーが存在しなければ0を返す」という意味です。これにより、「0」が出た回数を安全に取得し、それを1000で割ることで「0」になる確率を求めています。
+
+### 結果と考察
+
+上のコードを実行すると、以下のように $$\theta$$ によって「0」が観測される確率 $$P(0)$$ が滑らかな波（$$\cos^2(\theta/2)$$）として変化することが分かります。これはまさに二重スリット実験で現れる干渉縞に相当し、**量子ビットの状態の間に生じた「位相差」が観測確率に影響を与えている** ことを示しています。
+このような干渉は特にラムゼー干渉と呼ばれ、量子コンピュータの動作原理や量子ビットの性質を理解する上で重要な概念です。
+
+<img src="{{ site.baseurl }}/assets/images/ramsey-1qubit-experiment.svg" alt="ramsey" style="width: 80%; height: auto;">
