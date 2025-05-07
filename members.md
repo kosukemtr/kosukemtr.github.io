@@ -71,7 +71,7 @@ permalink: /members/
 | 山岡 悠          | 特任研究員 / QIQB 所属 |  [researchmap](https://researchmap.jp/yu-yamaoka)/[個人HP](https://sites.google.com/view/yu-yamaoka)|
 | 作花 健也        | 特任研究員 / QIQB 所属 |  |
 | Yu Huan         | D2   |                                            |
-| 高木 裕登       | D2   |                                            |
+| 諸星 裕登       | D2   |                                            |
 | 中山 昌勲       | D2   | [researchmap](https://researchmap.jp/qml_penguin) |
 | 鴨下 正彦       | D1   |  |
 | 木村 亮介       | M2   |                                            |
