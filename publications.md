@@ -5,6 +5,7 @@ title: Publications
 
 ## Peer-reviewed
 
+- Akimoto Nakayama, Kosuke Mitarai, Leonardo Placidi, Takanori Sugimoto, Keisuke Fujii, [VQE-generated Quantum Circuit Dataset for Machine Learning](https://doi.org/10.1103/c43x-9866), Physical Review Research **7**, 033048 (2025)
 - Yusei Mori, Hideaki Hakoshima, Kyohei Sudo, Toshio Mori, Kosuke Mitarai, Keisuke Fujii, [Quantum circuit unoptimization](https://doi.org/10.1103/physrevresearch.7.023139), Physical Review Research **7**, 023139 (2025)
 - Don Arai, Ken N. Okada, Yuichiro Nakano, Kosuke Mitarai, Keisuke Fujii, [Scalable circuit depth reduction in feedback-based quantum optimization with a quadratic approximation](https://doi.org/10.1103/physrevresearch.7.013035), Physical Review Research **7**, 013035 (2025)
 - Yoshiaki Kawase, Kosuke Mitarai, Keisuke Fujii, [Quantum kernel t-distributed stochastic neighbor embedding](https://doi.org/10.1103/physrevresearch.6.043234), Physical Review Research **6**, 043234 (2024)
@@ -65,7 +66,6 @@ title: Publications
 - Tsubasa Ichikawa, Hideaki Hakoshima, Koji Inui, Kosuke Ito, Ryo Matsuda, Kosuke Mitarai, Koichi Miyamoto, Wataru Mizukami, Kaoru Mizuta, Toshio Mori, Yuichiro Nakano, Akimoto Nakayama, Ken N. Okada, Takanori Sugimoto, Souichi Takahira, Nayuta Takemori, Satoyuki Tsukano, Hiroshi Ueda, Ryo Watanabe, Yuichiro Yoshida, Keisuke Fujii, [A comprehensive survey on quantum computer usage: How many qubits are employed for what purposes?](https://arxiv.org/abs/arXiv:2307.16130), arXiv:2307.16130 (2023)
 - Leonardo Placidi, Ryuichiro Hataya, Toshio Mori, Koki Aoyama, Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, [MNISQ: A Large-Scale Quantum Circuit Dataset for Machine Learning on/for Quantum Computers in the NISQ era](https://arxiv.org/abs/arXiv:2306.16627), arXiv:2306.16627 (2023)
 - Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-Selected Configuration Interaction: classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://arxiv.org/abs/arXiv:2302.11320), arXiv:2302.11320 (2023)
-- Akimoto Nakayama, Kosuke Mitarai, Leonardo Placidi, Takanori Sugimoto, Keisuke Fujii, [VQE-generated Quantum Circuit Dataset for Machine Learning](https://arxiv.org/abs/arXiv:2302.09751), arXiv:2302.09751 (2023)
 - Iori Takeda, Souichi Takahira, Kosuke Mitarai, Keisuke Fujii, [Quantum-inspired algorithm applied to extreme learning](https://arxiv.org/abs/arXiv:2209.12452), arXiv:2209.12452 (2022)
 - Makoto Negoro, Kosuke Mitarai, Keisuke Fujii, Kohei Nakajima, Masahiro Kitagawa, [Machine learning with controllable quantum dynamics of a nuclear spin ensemble in a solid](https://arxiv.org/abs/arXiv:1806.10910), arXiv:1806.10910 (2018)
 
