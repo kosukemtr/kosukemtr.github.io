@@ -31,6 +31,10 @@ function FindProxyForURL(url, host) {
         }
     }
 
+    if (isInNet(host, "192.168.5.0", "255.255.255.0")) {
+        return "SOCKS5 localhost:12321; DIRECT";
+    }
+
     // その他のサイトは直接接続
     return "DIRECT";
 }
