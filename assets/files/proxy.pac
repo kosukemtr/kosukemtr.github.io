@@ -8,6 +8,7 @@ function FindProxyForURL(url, host) {
     var proxyDomains = [
         "*.nature.com",
         "*.sciencemag.org",
+        "*.science.org",
         "*.ieee.org",
         "*.springer.com",
         "*.elsevier.com",
