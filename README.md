@@ -11,3 +11,5 @@
 
 ## 自動更新について
 - `/.github/workflows/update_publication.yml` によって [ResearchMap の情報](https://researchmap.jp/kosuke-mitarai) を自動的に取得して、publications.md が更新されるようになっています。
+
+
