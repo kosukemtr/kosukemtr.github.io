@@ -12,5 +12,3 @@ title: 量子ソフトウェア研究会で学生が発表しました
   （発表者：阿部 大夢, M1）
 - Cost analysis of quantum phase estimation: quantum Fourier transform versus Hadamard test approaches using Fisher information  
   （発表者：木村 亮介, M2）
-
-会場では、量子アルゴリズムの理論的な計算量評価と実装上の見通しの両面について活発な議論が行われました。いただいたコメントを今後の研究に反映し、引き続き発展させていきます。
