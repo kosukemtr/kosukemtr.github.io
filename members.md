@@ -70,22 +70,23 @@ permalink: /members/
 |-----------------|------|--------------------------------------------|
 | 山岡 悠          | 特任研究員 / QIQB 所属 |  [researchmap](https://researchmap.jp/yu-yamaoka)/[個人HP](https://sites.google.com/view/yu-yamaoka)|
 | 作花 健也        | 特任研究員 / QIQB 所属 |  |
-| Yu Huan         | D2   |                                            |
-| 諸星 裕登       | D2   |                                            |
-| 中山 昌勲       | D2   | [researchmap](https://researchmap.jp/qml_penguin) |
-| 鴨下 正彦       | D1   |  |
-| 木村 亮介       | M2   |                                            |
-| 伴 昂一郎       | M2   |                                            |
-| 阿部 大夢       | M1   |                                            |
-| 請園 力志       | M1   |                                            |
-| 坂本 大祐       | B4   |                                            |
-| 服部 晃汰       | B4   |                                            |
+| Yu Huan         | D3   |                                            |
+| 諸星 裕登       | D3   |                                            |
+| 中山 昌勲       | D3   | [researchmap](https://researchmap.jp/qml_penguin) |
+| 鴨下 正彦       | D2   |  |
+| 木村 亮介       | D1   |                                            |
+| 阿部 大夢       | M2   |                                            |
+| 請園 力志       | M2   |                                            |
+| 坂本 大祐       | M1   |                                            |
+| 服部 晃汰       | M1   |                                            |
+| 宮内 快         | B4   |                                            |
+| 藤原 丈         | B4   |                                            |
+| 坂倉 勇輝       | B4   |                                            |
 
 
 ## Past members
 
 | Name            | Year | Affliation afterwards                                |
 |-----------------|------|--------------------------------------------|
+| 伴 昂一郎       | 2026年3月卒業  |  大阪大学大学院情報科学研究科 情報システム工学専攻 根来研究室              |
 | 橋本 耀介       | 2025年3月卒業  |  QIQB量子コンピュータ実機グループ              |
-
-
