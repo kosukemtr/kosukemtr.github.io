@@ -23,7 +23,10 @@ function FindProxyForURL(url, host) {
         "*.acs.org",
         "*.rsc.org",
         "*.iop.org",
-        "*.aip.org"
+        "*.aip.org",
+        "*.optica.org",
+        "*.opg.optica.org",
+        "*.osapublishing.org"
     ];
 
     for (var i = 0; i < proxyDomains.length; i++) {
