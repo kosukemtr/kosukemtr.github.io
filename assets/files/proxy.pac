@@ -27,7 +27,8 @@ function FindProxyForURL(url, host) {
         "*.optica.org",
         "*.opg.optica.org",
         "*.osapublishing.org",
-        "*.optica-opn.org"
+        "*.optica-opn.org",
+        "*.pnas.org"
     ];
 
     for (var i = 0; i < proxyDomains.length; i++) {
