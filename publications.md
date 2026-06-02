@@ -5,6 +5,7 @@ title: Publications
 
 ## Peer-reviewed
 
+- Yuya Kawamata, Kosuke Mitarai, Keisuke Fujii, [Quasi Monte Carlo method for linear combination unitaries via classical postprocessing](https://doi.org/10.1103/nmky-mykb), Physical Review Research **8**, 023161-1 (2026)
 - Akimoto Nakayama, Kosuke Mitarai, Leonardo Placidi, Takanori Sugimoto, Keisuke Fujii, [VQE-generated Quantum Circuit Dataset for Machine Learning](https://doi.org/10.1103/c43x-9866), Physical Review Research **7**, 033048 (2025)
 - Yusei Mori, Hideaki Hakoshima, Kyohei Sudo, Toshio Mori, Kosuke Mitarai, Keisuke Fujii, [Quantum circuit unoptimization](https://doi.org/10.1103/physrevresearch.7.023139), Physical Review Research **7**, 023139 (2025)
 - Don Arai, Ken N. Okada, Yuichiro Nakano, Kosuke Mitarai, Keisuke Fujii, [Scalable circuit depth reduction in feedback-based quantum optimization with a quadratic approximation](https://doi.org/10.1103/physrevresearch.7.013035), Physical Review Research **7**, 013035 (2025)
@@ -61,7 +62,6 @@ title: Publications
 - Daisuke Sakamoto, Soshun Naito, Yusei Mori, Kosuke Mitarai, [Efficient equivalence checking of Clifford-U circuits with shared single-qubit unitaries](https://arxiv.org/abs/arXiv:2603.12697), arXiv:2603.12697 (2026)
 - Ryosuke Kimura, Kosuke Mitarai, [Fisher information based lower bounds on the cost of quantum phase estimation](https://arxiv.org/abs/arXiv:2603.12706), arXiv:2603.12706 (2026)
 - Hugo Pages, Chusei Kiumi, Yuto Morohoshi, Bálint Koczor, Kosuke Mitarai, [Low-Resource Quantum Energy Gap Estimation via Randomization](https://arxiv.org/abs/arXiv:2601.13881), arXiv:2601.13881 (2026)
-- Yuya Kawamata, Kosuke Mitarai, Keisuke Fujii, [Quasi-Monte Carlo Method for Linear Combination Unitaries via Classical Post-Processing](https://arxiv.org/abs/arXiv:2509.14451), arXiv:2509.14451 (2025)
 - Yuto Morohoshi, Akimoto Nakayama, Hidetaka Manabe, Kosuke Mitarai, [Learning functions of Hamiltonians with Hamiltonian Fourier features](https://arxiv.org/abs/arXiv:2504.16370), arXiv:2504.16370 (2025)
 - Kenya Sakka, Kosuke Mitarai, Keisuke Fujii, [Automating quantum feature map design via large language models](https://arxiv.org/abs/arXiv:2504.07396), arXiv:2504.07396 (2025)
 - Hiroshi Yano, Masaya Kohda, Shoichiro Tsutsui, Ryosuke Imai, Keita Kanno, Kosuke Mitarai, Yuya O. Nakagawa, [Quantum expectation value estimation by doubling the number of qubits](https://arxiv.org/abs/arXiv:2412.14466), arXiv:2412.14466 (2024)
