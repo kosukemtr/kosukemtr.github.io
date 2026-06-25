@@ -5,6 +5,7 @@ title: Publications
 
 ## Peer-reviewed
 
+- Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-selected configuration interaction: Classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://doi.org/10.1103/dmn4-snfx), Physical Review Research **8**, 023268-1 (2026)
 - Leonardo Placidi, Ryuichiro Hataya, Toshio Mori, Koki Aoyama, Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, [MNISQ: A Large-Scale Quantum Circuit Dataset for Machine Learning in the NISQ Era](https://doi.org/10.1038/s41597-026-07493-9), Scientific Data **13**, 810 (2026)
 - Yuya Kawamata, Kosuke Mitarai, Keisuke Fujii, [Quasi Monte Carlo method for linear combination unitaries via classical postprocessing](https://doi.org/10.1103/nmky-mykb), Physical Review Research **8**, 023161-1 (2026)
 - Akimoto Nakayama, Kosuke Mitarai, Leonardo Placidi, Takanori Sugimoto, Keisuke Fujii, [VQE-generated Quantum Circuit Dataset for Machine Learning](https://doi.org/10.1103/c43x-9866), Physical Review Research **7**, 033048 (2025)
@@ -70,7 +71,6 @@ title: Publications
 - Akimoto Nakayama, Hayata Morisaki, Kosuke Mitarai, Hiroshi Ueda, Keisuke Fujii, [Explicit quantum surrogates for quantum kernel models](https://arxiv.org/abs/arXiv:2408.03000), arXiv:2408.03000 (2024)
 - Adam Siegel, Kosuke Mitarai, Keisuke Fujii, [Algorithmic error mitigation for quantum eigenvalues estimation](https://arxiv.org/abs/arXiv:2308.03879), arXiv:2308.03879 (2023)
 - Tsubasa Ichikawa, Hideaki Hakoshima, Koji Inui, Kosuke Ito, Ryo Matsuda, Kosuke Mitarai, Koichi Miyamoto, Wataru Mizukami, Kaoru Mizuta, Toshio Mori, Yuichiro Nakano, Akimoto Nakayama, Ken N. Okada, Takanori Sugimoto, Souichi Takahira, Nayuta Takemori, Satoyuki Tsukano, Hiroshi Ueda, Ryo Watanabe, Yuichiro Yoshida, Keisuke Fujii, [A comprehensive survey on quantum computer usage: How many qubits are employed for what purposes?](https://arxiv.org/abs/arXiv:2307.16130), arXiv:2307.16130 (2023)
-- Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-Selected Configuration Interaction: classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://arxiv.org/abs/arXiv:2302.11320), arXiv:2302.11320 (2023)
 - Iori Takeda, Souichi Takahira, Kosuke Mitarai, Keisuke Fujii, [Quantum-inspired algorithm applied to extreme learning](https://arxiv.org/abs/arXiv:2209.12452), arXiv:2209.12452 (2022)
 - Makoto Negoro, Kosuke Mitarai, Keisuke Fujii, Kohei Nakajima, Masahiro Kitagawa, [Machine learning with controllable quantum dynamics of a nuclear spin ensemble in a solid](https://arxiv.org/abs/arXiv:1806.10910), arXiv:1806.10910 (2018)
 
