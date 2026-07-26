@@ -84,7 +84,7 @@ jobs:
             # Check if arXiv_id exists
             ARXIV_ID=$(echo "$entry" | jq -r '.identifiers.arxiv_id[0] // empty')
             if [ -n "$ARXIV_ID" ]; then
-              ARXIV_URL=$(echo "$entry" | jq -r '.see_also[] | select(.label == "arxiv_url") | .["@id"]')
+              ARXIV_URL=$(echo "$entry" | jq -r '.see_also // [] | map(select(.label == "arxiv_url")) | .[0]["@id"] // empty')
               ARXIV_YEAR=$(echo "$ARXIV_ID" | cut -d':' -f2)  # Extract the year from arXiv ID
               echo "$ARXIV_URL, $ARXIV_ID"
               # Generate the content for the publications page
