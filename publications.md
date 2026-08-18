@@ -61,6 +61,9 @@ title: Publications
 
 ## arXiv preprints
 
+- Masahiko Kamoshita, Kosuke Mitarai, [QSCI-CMP: Quantum-Selected Configuration Interaction with Chemically Motivated Preselection](https://arxiv.org/abs/arXiv:2608.05766), arXiv:2608.05766 (2026)
+- Kohei Numata, Wataru Mizukami, Kosuke Mitarai, Keisuke Fujii, Yutaka Imamura, [Quantum machine learning interatomic potential: Application of variational quantum algorithm](https://arxiv.org/abs/arXiv:2607.27841), arXiv:2607.27841 (2026)
+- Kenya Sakka, Wataru Mizukami, Kosuke Mitarai, [An LLM System for Autonomous Variational Quantum Circuit Design](https://arxiv.org/abs/arXiv:2606.13380), arXiv:2606.13380 (2026)
 - Daisuke Sakamoto, Soshun Naito, Yusei Mori, Kosuke Mitarai, [Efficient equivalence checking of Clifford-U circuits with shared single-qubit unitaries](https://arxiv.org/abs/arXiv:2603.12697), arXiv:2603.12697 (2026)
 - Ryosuke Kimura, Kosuke Mitarai, [Fisher information based lower bounds on the cost of quantum phase estimation](https://arxiv.org/abs/arXiv:2603.12706), arXiv:2603.12706 (2026)
 - Hugo Pages, Chusei Kiumi, Yuto Morohoshi, Bálint Koczor, Kosuke Mitarai, [Low-Resource Quantum Energy Gap Estimation via Randomization](https://arxiv.org/abs/arXiv:2601.13881), arXiv:2601.13881 (2026)
