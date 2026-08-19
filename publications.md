@@ -5,11 +5,11 @@ title: Publications
 
 ## Peer-reviewed
 
-- Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-selected configuration interaction: Classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://doi.org/10.1103/dmn4-snfx), Physical Review Research **8**, 023268-1 (2026)
-- Leonardo Placidi, Ryuichiro Hataya, Toshio Mori, Koki Aoyama, Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, [MNISQ: A Large-Scale Quantum Circuit Dataset for Machine Learning in the NISQ Era](https://doi.org/10.1038/s41597-026-07493-9), Scientific Data **13**, 810 (2026)
-- Yuya Kawamata, Kosuke Mitarai, Keisuke Fujii, [Quasi Monte Carlo method for linear combination unitaries via classical postprocessing](https://doi.org/10.1103/nmky-mykb), Physical Review Research **8**, 023161-1 (2026)
-- Akimoto Nakayama, Kosuke Mitarai, Leonardo Placidi, Takanori Sugimoto, Keisuke Fujii, [VQE-generated Quantum Circuit Dataset for Machine Learning](https://doi.org/10.1103/c43x-9866), Physical Review Research **7**, 033048 (2025)
-- Yusei Mori, Hideaki Hakoshima, Kyohei Sudo, Toshio Mori, Kosuke Mitarai, Keisuke Fujii, [Quantum circuit unoptimization](https://doi.org/10.1103/physrevresearch.7.023139), Physical Review Research **7**, 023139 (2025)
+- Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-selected configuration interaction: Classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://doi.org/10.1103/dmn4-snfx), Physical Review Research **8**, null (2026)
+- Leonardo Placidi, Ryuichiro Hataya, Toshio Mori, Koki Aoyama, Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, [MNISQ: A Large-Scale Quantum Circuit Dataset for Machine Learning in the NISQ Era](https://doi.org/10.1038/s41597-026-07493-9), Scientific Data **13**, null (2026)
+- Yuya Kawamata, Kosuke Mitarai, Keisuke Fujii, [Quasi Monte Carlo method for linear combination unitaries via classical postprocessing](https://doi.org/10.1103/nmky-mykb), Physical Review Research **8**, null (2026)
+- Akimoto Nakayama, Kosuke Mitarai, Leonardo Placidi, Takanori Sugimoto, Keisuke Fujii, [VQE-generated quantum circuit dataset for machine learning](https://doi.org/10.1103/c43x-9866), Physical Review Research **7**, null (2025)
+- Yusei Mori, Hideaki Hakoshima, Kyohei Sudo, Toshio Mori, Kosuke Mitarai, Keisuke Fujii, [Quantum circuit unoptimization](https://doi.org/10.1103/physrevresearch.7.023139), Physical Review Research **7**, null (2025)
 - Don Arai, Ken N. Okada, Yuichiro Nakano, Kosuke Mitarai, Keisuke Fujii, [Scalable circuit depth reduction in feedback-based quantum optimization with a quadratic approximation](https://doi.org/10.1103/physrevresearch.7.013035), Physical Review Research **7**, 013035 (2025)
 - Yoshiaki Kawase, Kosuke Mitarai, Keisuke Fujii, [Quantum kernel t-distributed stochastic neighbor embedding](https://doi.org/10.1103/physrevresearch.6.043234), Physical Review Research **6**, 043234 (2024)
 - Naixu Guo, Kosuke Mitarai, Keisuke Fujii, [Nonlinear transformation of complex amplitudes via quantum singular value transformation](https://doi.org/10.1103/physrevresearch.6.043227), Physical Review Research **6**, 043227 (2024)
