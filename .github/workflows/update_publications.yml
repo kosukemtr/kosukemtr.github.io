@@ -180,33 +180,56 @@ jobs:
       run: |
         if [ -f diff.txt ]; then
           current_date=$(date +%Y-%m-%d)
+          created_files=()
           while IFS= read -r line; do
             if [[ $line == +* ]]; then
               # Remove the leading '+' sign
               line=${line#+}
-  
+
+              # Do not create a news item from incomplete metadata. In particular,
+              # ResearchMap may temporarily return "null" for a page number.
+              if [[ "$line" == *"null"* ]]; then
+                echo "Skipping incomplete publication metadata: $line"
+                continue
+              fi
+
               # Extract the title and URL
-              title=$(echo "$line" | sed -E 's/.*\[([^]]+)\].*/\1/')
-              url=$(echo "$line" | grep -o 'http[s]*://[^)]*')
-  
+              title=$(printf '%s\n' "$line" | sed -nE 's/.*\[([^]]+)\].*/\1/p')
+              url=$(printf '%s\n' "$line" | sed -nE 's/.*\]\((https?:\/\/[^)]*)\).*/\1/p')
+
+              # Ignore lines that are not publication entries.
+              if [[ -z "$title" || -z "$url" ]]; then
+                continue
+              fi
+
+              # A changed page number, title capitalization, or other metadata is
+              # not a new publication. Avoid duplicate news by checking both the
+              # stable link (DOI/arXiv URL) and the title against existing posts.
+              if grep -R -F -q -- "$url" _posts || grep -R -F -q -- "New publication: $title" _posts; then
+                echo "Skipping already announced publication: $title"
+                continue
+              fi
+
               # Sanitize the title to create a valid filename
               sanitized_title=$(echo "$title" | sed -E 's/[^a-zA-Z0-9]/-/g')
-  
+
               # Create a filename with the current date and sanitized title
               filename="${current_date}-${sanitized_title}.md"
               echo "Creating file: _posts/$filename"
-  
+
               # Create the post content
               echo "---" > "_posts/$filename"
               echo "title: \"New publication: $title\"" >> "_posts/$filename"
               echo "---" >> "_posts/$filename"
               echo "" >> "_posts/$filename"
               echo "A new paper \"$title\" is now published [here]($url)." >> "_posts/$filename"
+              created_files+=("_posts/$filename")
             fi
           done < diff.txt
-          # Proceed to commit and push if new posts were created
-          if [ "$(ls -A _posts/*.md 2>/dev/null)" ]; then
-            git add _posts/*.md
+
+          # Proceed to commit and push only if this run created new posts.
+          if [ "${#created_files[@]}" -gt 0 ]; then
+            git add -- "${created_files[@]}"
             git commit -m "Add new publication posts"
             git push origin main
           else
