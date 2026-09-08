@@ -44,6 +44,8 @@ jobs:
         echo "" >> publications.md
         echo "## Peer-reviewed" >> publications.md
         echo "" >> publications.md
+        # Keep the publication dates keyed by link for news post generation.
+        : > publication_dates.tsv
         # Loop through each extracted paper and add it to the content
         while read -r paper; do
           JOURNAL_NAME=$(echo "$paper" | jq -r '.publication_name.en')
@@ -56,6 +58,9 @@ jobs:
           DOI=$(echo "$paper" | jq -r '.identifiers.doi[0]')
           
           echo "- $AUTHORS, [$TITLE](https://doi.org/$DOI), $JOURNAL_NAME **$VOLUME**, $STARTING_PAGE ($YEAR)" >> publications.md
+          if [[ -n "$DOI" && "$DOI" != "null" ]]; then
+            printf 'https://doi.org/%s\t%s\n' "$DOI" "$PUBLICATION_DATE" >> publication_dates.tsv
+          fi
         done <<< "$PAPERS"
     - name: Fetch Misc Data from ResearchMap
       run: |
@@ -89,6 +94,7 @@ jobs:
               echo "$ARXIV_URL, $ARXIV_ID"
               # Generate the content for the publications page
               echo "- $AUTHORS, [$TITLE_EN](https://arxiv.org/abs/$ARXIV_ID), $ARXIV_ID ($YEAR)" >> publications.md
+              printf 'https://arxiv.org/abs/%s\t%s\n' "$ARXIV_ID" "$PUBLICATION_DATE" >> publication_dates.tsv
             fi
           fi
         done <<< "$MISC_ENTRIES"
@@ -179,7 +185,6 @@ jobs:
     - name: Generate New Posts
       run: |
         if [ -f diff.txt ]; then
-          current_date=$(date +%Y-%m-%d)
           created_files=()
           while IFS= read -r line; do
             if [[ $line == +* ]]; then
@@ -210,11 +215,17 @@ jobs:
                 continue
               fi
 
+              publication_date=$(awk -F '\t' -v publication_url="$url" '$1 == publication_url { print $2; exit }' publication_dates.tsv)
+              if [[ ! "$publication_date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+                echo "Skipping publication without a complete publication date: $title"
+                continue
+              fi
+
               # Sanitize the title to create a valid filename
               sanitized_title=$(echo "$title" | sed -E 's/[^a-zA-Z0-9]/-/g')
 
-              # Create a filename with the current date and sanitized title
-              filename="${current_date}-${sanitized_title}.md"
+              # Create a filename with the ResearchMap publication date and title.
+              filename="${publication_date}-${sanitized_title}.md"
               echo "Creating file: _posts/$filename"
 
               # Create the post content
