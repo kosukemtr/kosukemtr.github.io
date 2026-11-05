@@ -37,7 +37,8 @@ function FindProxyForURL(url, host) {
         }
     }
 
-    if (isInNet(host, "192.168.5.0", "255.255.255.0")) {
+    if (isInNet(host, "192.168.5.0", "255.255.255.0") ||
+        isInNet(host, "192.168.11.0", "255.255.255.0")) {
         return "SOCKS5 127.0.0.1:12321; DIRECT";
     }
 
