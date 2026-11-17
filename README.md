@@ -28,6 +28,7 @@
 - `/members.md`: メンバーリスト
 
 ## 自動更新について
-- `/.github/workflows/update_publication.yml` によって [ResearchMap の情報](https://researchmap.jp/kosuke-mitarai) を自動的に取得して、publications.md が更新されるようになっています。
+- `/.github/workflows/update_publications.yml` によって [ResearchMap の情報](https://researchmap.jp/kosuke-mitarai) を自動的に取得して、publications.md が更新されるようになっています。
+- ResearchMapのメンテナンスや一時的な接続障害時は最大3回再試行し、取得できなければ既存の論文一覧・ニュースを保持して更新を見送ります。実行サマリーに理由を残し、翌日の定期実行で再取得します。不正なJSONや想定外のデータ形式は、引き続きエラーとして検出します。
 
 
