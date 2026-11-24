@@ -5,6 +5,8 @@ title: Publications
 
 ## Peer-reviewed
 
+- Hugo Pages, Chusei Kiumi, Yuto Morohoshi, Bálint Koczor, Kosuke Mitarai, [Low-resource quantum energy gap estimation via randomization](https://doi.org/10.1103/mxgl-96mv), Physical Review Research **8**, null (2026)
+- Yuto Morohoshi, Hidetaka Manabe, Akimoto Nakayama, Kosuke Mitarai, [Learning functions of Hamiltonians with Hamiltonian Fourier features](https://doi.org/10.1103/4p8x-lk4r), Physical Review Letters **null**, null (2026)
 - Keita Kanno, Masaya Kohda, Ryosuke Imai, Sho Koh, Kosuke Mitarai, Wataru Mizukami, Yuya O. Nakagawa, [Quantum-selected configuration interaction: Classical diagonalization of Hamiltonians in subspaces selected by quantum computers](https://doi.org/10.1103/dmn4-snfx), Physical Review Research **8**, 023268-1 (2026)
 - Leonardo Placidi, Ryuichiro Hataya, Toshio Mori, Koki Aoyama, Hayata Morisaki, Kosuke Mitarai, Keisuke Fujii, [MNISQ: A Large-Scale Quantum Circuit Dataset for Machine Learning in the NISQ Era](https://doi.org/10.1038/s41597-026-07493-9), Scientific Data **13**, 810 (2026)
 - Yuya Kawamata, Kosuke Mitarai, Keisuke Fujii, [Quasi Monte Carlo method for linear combination unitaries via classical postprocessing](https://doi.org/10.1103/nmky-mykb), Physical Review Research **8**, 023161-1 (2026)
@@ -68,8 +70,6 @@ title: Publications
 - Kenya Sakka, Wataru Mizukami, Kosuke Mitarai, [An LLM System for Autonomous Variational Quantum Circuit Design](https://arxiv.org/abs/arXiv:2606.13380), arXiv:2606.13380 (2026)
 - Daisuke Sakamoto, Soshun Naito, Yusei Mori, Kosuke Mitarai, [Efficient equivalence checking of Clifford-U circuits with shared single-qubit unitaries](https://arxiv.org/abs/arXiv:2603.12697), arXiv:2603.12697 (2026)
 - Ryosuke Kimura, Kosuke Mitarai, [Fisher information based lower bounds on the cost of quantum phase estimation](https://arxiv.org/abs/arXiv:2603.12706), arXiv:2603.12706 (2026)
-- Hugo Pages, Chusei Kiumi, Yuto Morohoshi, Bálint Koczor, Kosuke Mitarai, [Low-Resource Quantum Energy Gap Estimation via Randomization](https://arxiv.org/abs/arXiv:2601.13881), arXiv:2601.13881 (2026)
-- Yuto Morohoshi, Akimoto Nakayama, Hidetaka Manabe, Kosuke Mitarai, [Learning functions of Hamiltonians with Hamiltonian Fourier features](https://arxiv.org/abs/arXiv:2504.16370), arXiv:2504.16370 (2025)
 - Kenya Sakka, Kosuke Mitarai, Keisuke Fujii, [Automating quantum feature map design via large language models](https://arxiv.org/abs/arXiv:2504.07396), arXiv:2504.07396 (2025)
 - Hiroshi Yano, Masaya Kohda, Shoichiro Tsutsui, Ryosuke Imai, Keita Kanno, Kosuke Mitarai, Yuya O. Nakagawa, [Quantum expectation value estimation by doubling the number of qubits](https://arxiv.org/abs/arXiv:2412.14466), arXiv:2412.14466 (2024)
 - Hitomi Mori, Kosuke Mitarai, Keisuke Fujii, [Efficient state preparation for multivariate Monte Carlo simulation](https://arxiv.org/abs/arXiv:2409.07336), arXiv:2409.07336 (2024)
